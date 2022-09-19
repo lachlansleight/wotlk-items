@@ -29,6 +29,14 @@ const parseGameClass = (gameClass: string): CharacterClass => {
 
 export const parseEightUpgradesCharacter = (input: any, items: Item[]): CharacterState => {
     const output: CharacterState = {
+        id:
+            input.character.race +
+            "_" +
+            input.character.gameClass +
+            "_" +
+            input.character.name +
+            "_" +
+            input.name,
         class: parseGameClass(input.character.gameClass),
         level: input.character.level,
         name: input.character.name,

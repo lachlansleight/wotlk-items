@@ -126,6 +126,7 @@ export type ItemSubclass =
     | "Sigil";
 
 export interface CharacterState {
+    id: string;
     name: string;
     level: number;
     class: CharacterClass;
@@ -186,6 +187,7 @@ export interface ItemSource {
     name: string;
     npcId?: number[];
     objectId?: number[];
+    fromWotlkDb?: boolean;
     NORMAL_DIFF?: ItemDrop[];
     HEROIC_DIFF?: ItemDrop[];
     RAID10_DIFF?: ItemDrop[];
