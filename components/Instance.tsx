@@ -43,8 +43,9 @@ const InstanceC = ({
         if (!character) return output;
 
         instance.sources.forEach(source => {
-            if (source.NORMAL_DIFF)
-                source.NORMAL_DIFF.forEach(item => {
+            Object.keys(source).forEach(key => {
+                if (!key.includes("_DIFF")) return;
+                (source as any)[key].forEach((item: PopulatedItemDrop) => {
                     output[item.id] = {
                         usable: canUseItem(character, item, !levelRestricted),
                         values: [],
@@ -67,6 +68,7 @@ const InstanceC = ({
                         output[item.id].valueDiffs = diffs;
                     }
                 });
+            });
         });
 
         return output;

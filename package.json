@@ -1,7 +1,7 @@
 {
     "name": "wotlk-items",
     "author": "@LachlanSleight",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "scripts": {
         "dev": "next dev -p 3335",
         "build": "next build",

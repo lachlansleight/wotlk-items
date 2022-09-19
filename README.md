@@ -14,6 +14,7 @@ Things still to do:
 -   [x] Fix the broken instance names, boss names, etc.
 -   [ ] Create exchange list (tier tokens, sunmotes, quest items e.g. verdant sphere, etc)
 -   [ ] Create dense, finalized equippable item list
+-   [ ] Put all the data in context, for easy access by any component
 -   [ ] Figure out why some stat weightings are incorrect
 -   [ ] Make it possible to save a character for easy selection later (assuming nothing has changed on eightyupgrades)
 -   [ ] Show all three stat weightings simultaneously
