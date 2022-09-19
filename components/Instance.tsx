@@ -1,24 +1,18 @@
-import { useEffect, useMemo, useState } from "react";
-import {
-    CharacterState,
-    InstanceDifficulty,
-    PopulatedInstance,
-    PopulatedItemDrop,
-    Quality,
-} from "lib/types";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { InstanceDifficulty, PopulatedInstance, PopulatedItemDrop, Quality } from "lib/types";
 import { canUseItem, getItemValue, getMatchingCharacterItem } from "lib/characterParsing";
+import useCharacterData from "lib/useCharacter";
 
 const InstanceC = ({
     instance,
-    character,
     hideNonUpgrades = false,
     levelRestricted = true,
 }: {
     instance: PopulatedInstance;
-    character?: CharacterState;
     hideNonUpgrades?: boolean;
     levelRestricted?: boolean;
 }): JSX.Element => {
+    const { character } = useCharacterData();
     const difficulties = useMemo(() => {
         const allDiffs: string[] = [];
         instance.sources.forEach(source => {
@@ -95,92 +89,69 @@ const InstanceC = ({
         }
     };
 
+    const difficultySelects = [
+        ["NORMAL_DIFF", "N"],
+        ["HEROIC_DIFF", "H"],
+        ["RAID10_DIFF", "10"],
+        ["RAID10H_DIFF", "10 H"],
+        ["RAID25_DIFF", "25"],
+        ["RAID25H_DIFF", "25 H"],
+        ["RAID20_DIFF", "20"],
+        ["RAID40_DIFF", "40"],
+    ];
+
+    const [softresData, setSoftresData] = useState<{ [key: number]: number } | null>(null);
+    const showSecretPopup = useCallback(() => {
+        if (!character) return;
+        const newVal = prompt("Secret!");
+        if (!newVal) return;
+        try {
+            const lines = newVal?.split("\n");
+            const output: { [key: number]: number } = {};
+            for (let i = 0; i < lines.length; i++) {
+                const pieces = lines[i].split(",");
+                if (pieces[1].toLowerCase() === character.name.toLowerCase()) continue;
+                const id = parseInt(pieces[0]);
+                if (isNaN(id)) continue;
+                if (!output[id]) output[id] = 0;
+                output[id]++;
+            }
+            setSoftresData(output);
+        } catch {
+            //do nothing
+            alert("Wrong");
+        }
+    }, [character]);
+
     return (
         <div className="mb-8">
-            <div className="flex gap-4 items-center border-b-2 mb-4">
-                <h1 className="text-4xl">{instance.name}</h1>
-                {difficulties.length > 1 && (
-                    <div className="flex gap-2">
-                        {difficulties.includes("NORMAL_DIFF") && (
-                            <button
-                                className={`rounded px-2 py ${
-                                    diff === "NORMAL_DIFF"
-                                        ? "bg-neutral-600 text-neutral-400 border"
-                                        : "bg-neutral-800 text-white"
-                                }`}
-                                disabled={diff === "NORMAL_DIFF"}
-                                onClick={() => setDiff("NORMAL_DIFF")}
-                            >
-                                N
-                            </button>
-                        )}
-                        {difficulties.includes("HEROIC_DIFF") && (
-                            <button
-                                className={`rounded px-2 py ${
-                                    diff === "HEROIC_DIFF"
-                                        ? "bg-neutral-600 text-neutral-400 border"
-                                        : "bg-neutral-800 text-white"
-                                }`}
-                                disabled={diff === "HEROIC_DIFF"}
-                                onClick={() => setDiff("HEROIC_DIFF")}
-                            >
-                                H
-                            </button>
-                        )}
-                        {difficulties.includes("RAID10_DIFF") && (
-                            <button
-                                className={`rounded px-2 py ${
-                                    diff === "RAID10_DIFF"
-                                        ? "bg-neutral-600 text-neutral-400 border"
-                                        : "bg-neutral-800 text-white"
-                                }`}
-                                disabled={diff === "RAID10_DIFF"}
-                                onClick={() => setDiff("RAID10_DIFF")}
-                            >
-                                10 N
-                            </button>
-                        )}
-                        {difficulties.includes("RAID10H_DIFF") && (
-                            <button
-                                className={`rounded px-2 py ${
-                                    diff === "RAID10H_DIFF"
-                                        ? "bg-neutral-600 text-neutral-400 border"
-                                        : "bg-neutral-800 text-white"
-                                }`}
-                                disabled={diff === "RAID10H_DIFF"}
-                                onClick={() => setDiff("RAID10H_DIFF")}
-                            >
-                                10 H
-                            </button>
-                        )}
-                        {difficulties.includes("RAID25_DIFF") && (
-                            <button
-                                className={`rounded px-2 py ${
-                                    diff === "RAID25_DIFF"
-                                        ? "bg-neutral-600 text-neutral-400 border"
-                                        : "bg-neutral-800 text-white"
-                                }`}
-                                disabled={diff === "RAID25_DIFF"}
-                                onClick={() => setDiff("RAID25_DIFF")}
-                            >
-                                25 N
-                            </button>
-                        )}
-                        {difficulties.includes("RAID25H_DIFF") && (
-                            <button
-                                className={`rounded px-2 py ${
-                                    diff === "RAID25H_DIFF"
-                                        ? "bg-neutral-600 text-neutral-400 border"
-                                        : "bg-neutral-800 text-white"
-                                }`}
-                                disabled={diff === "RAID25H_DIFF"}
-                                onClick={() => setDiff("RAID25H_DIFF")}
-                            >
-                                25 H
-                            </button>
-                        )}
-                    </div>
-                )}
+            <div className="flex gap-4 items-center border-b-2 mb-4 justify-between">
+                <div className="flex gap-4 items-center">
+                    <h1 className="text-4xl">{instance.name}</h1>
+                    {difficulties.length > 1 && (
+                        <div className="flex gap-2">
+                            {difficultySelects.map(key => {
+                                return difficulties.includes(key[0]) ? (
+                                    <button
+                                        key={`${instance.name}_${key}`}
+                                        className={`rounded px-2 py ${
+                                            diff === key[0]
+                                                ? "bg-blue-700 text-white font-bold border"
+                                                : "bg-neutral-800 text-white"
+                                        }`}
+                                        disabled={diff === key[0]}
+                                        onClick={() => setDiff(key[0] as InstanceDifficulty)}
+                                    >
+                                        {key[1]}
+                                    </button>
+                                ) : (
+                                    <></>
+                                );
+                            })}
+                        </div>
+                    )}
+                </div>
+                <button className="w-2 h-2 bg-blue-500 border rounded" onClick={showSecretPopup} />
             </div>
             {instance.sources.map(s => {
                 return (
@@ -241,6 +212,26 @@ const InstanceC = ({
                                                 >
                                                     {i.name}
                                                 </p>
+                                                {(softresData && metadata[i.id]) &&
+                                                    metadata[i.id].valueDiffs[0] > 0 && (
+                                                        <div className="flex flex-col items-center font-bold text-cyan-400 w-24">
+                                                            <p>
+                                                                {softresData[i.id] || 0} SR
+                                                                {softresData[i.id] === 1 ? "" : "s"}
+                                                            </p>
+                                                            <p>
+                                                                {Math.round(
+                                                                    (100 *
+                                                                        i.droprate *
+                                                                        metadata[i.id]
+                                                                            .valueDiffs[0]) /
+                                                                        (1 +
+                                                                            (softresData[i.id] ||
+                                                                                0))
+                                                                )}
+                                                            </p>
+                                                        </div>
+                                                    )}
                                                 <div className="flex flex-col items-end pl-4">
                                                     {i.droprate !== 0 && (
                                                         <p className="font-bold text-xl">

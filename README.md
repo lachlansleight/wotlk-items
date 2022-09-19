@@ -18,4 +18,4 @@ Things still to do:
 -   [ ] Figure out why some stat weightings are incorrect
 -   [x] Make it possible to save a character for easy selection later (assuming nothing has changed on eightyupgrades)
 -   [ ] Show all three stat weightings simultaneously
--   [ ] Add in softres.it import for SR strategy values
+-   [x] Add in softres.it import for SR strategy values
