@@ -1,6 +1,6 @@
 [
   {
-    "name": "HellfireRamparts",
+    "name": "Hellfire Ramparts",
     "id": 3562,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -328,7 +328,7 @@
     ]
   },
   {
-    "name": "TheBloodFurnace",
+    "name": "The Blood Furnace",
     "id": 3713,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -587,7 +587,7 @@
     ]
   },
   {
-    "name": "TheShatteredHalls",
+    "name": "The Shattered Halls",
     "id": 3714,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -1361,7 +1361,7 @@
     ]
   },
   {
-    "name": "AuchenaiCrypts",
+    "name": "Auchenai Crypts",
     "id": 3790,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -1587,7 +1587,7 @@
     ]
   },
   {
-    "name": "SethekkHalls",
+    "name": "Sethekk Halls",
     "id": 3791,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -1917,7 +1917,7 @@
     ]
   },
   {
-    "name": "ShadowLabyrinth",
+    "name": "Shadow Labyrinth",
     "id": 3789,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -2355,7 +2355,7 @@
     ]
   },
   {
-    "name": "TheSlavePens",
+    "name": "The Slave Pens",
     "id": 3717,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -2733,7 +2733,7 @@
     ]
   },
   {
-    "name": "TheUnderbog",
+    "name": "The Underbog",
     "id": 3716,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -3080,7 +3080,7 @@
     ]
   },
   {
-    "name": "TheSteamvault",
+    "name": "The Steamvault",
     "id": 3715,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -3425,7 +3425,7 @@
     ]
   },
   {
-    "name": "OldHillsbradFoothills",
+    "name": "Old Hillsbrad Foothills",
     "id": 2367,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -3774,7 +3774,7 @@
     ]
   },
   {
-    "name": "TheBlackMorass",
+    "name": "The Black Morass",
     "id": 2366,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -4095,7 +4095,7 @@
     ]
   },
   {
-    "name": "TheArcatraz",
+    "name": "The Arcatraz",
     "id": 3848,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -4493,7 +4493,7 @@
     ]
   },
   {
-    "name": "TheBotanica",
+    "name": "The Botanica",
     "id": 3847,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -4986,7 +4986,7 @@
     ]
   },
   {
-    "name": "TheMechanar",
+    "name": "The Mechanar",
     "id": 3849,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -5400,7 +5400,7 @@
     ]
   },
   {
-    "name": "MagistersTerrace",
+    "name": "Magisters Terrace",
     "id": 4131,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -6660,7 +6660,7 @@
     ]
   },
   {
-    "name": "ZulAman",
+    "name": "Zul'Aman",
     "id": 3805,
     "contentType": "RAID10_CONTENT",
     "sources": [
@@ -7110,7 +7110,7 @@
     ]
   },
   {
-    "name": "WorldBossesBC",
+    "name": "World Bosses",
     "id": 0,
     "contentType": "RAID25_CONTENT",
     "sources": [
@@ -7215,7 +7215,7 @@
     ]
   },
   {
-    "name": "MagtheridonsLair",
+    "name": "Magtheridon's Lair",
     "id": 3836,
     "contentType": "RAID25_CONTENT",
     "sources": [
@@ -7303,7 +7303,7 @@
     ]
   },
   {
-    "name": "GruulsLair",
+    "name": "Gruul's Lair",
     "id": 3923,
     "contentType": "RAID25_CONTENT",
     "sources": [
@@ -7432,7 +7432,7 @@
     ]
   },
   {
-    "name": "SerpentshrineCavern",
+    "name": "Serpentshrine Cavern",
     "id": 3607,
     "contentType": "RAID25_CONTENT",
     "sources": [
@@ -7891,7 +7891,7 @@
     ]
   },
   {
-    "name": "TempestKeep",
+    "name": "Tempest Keep",
     "id": 3845,
     "contentType": "RAID25_CONTENT",
     "sources": [
@@ -8290,7 +8290,7 @@
     ]
   },
   {
-    "name": "HyjalSummit",
+    "name": "Hyjal Summit",
     "id": 3606,
     "contentType": "RAID25_CONTENT",
     "sources": [
@@ -8668,7 +8668,7 @@
     ]
   },
   {
-    "name": "BlackTemple",
+    "name": "Black Temple",
     "id": 3959,
     "contentType": "RAID25_CONTENT",
     "sources": [
@@ -9385,7 +9385,7 @@
     ]
   },
   {
-    "name": "SunwellPlateau",
+    "name": "Sunwell Plateau",
     "id": 4075,
     "contentType": "RAID25_CONTENT",
     "sources": [

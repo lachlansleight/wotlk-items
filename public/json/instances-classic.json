@@ -1,6 +1,6 @@
 [
   {
-    "name": "Ragefire",
+    "name": "Ragefire Chasm",
     "id": 2437,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -49,7 +49,7 @@
     ]
   },
   {
-    "name": "WailingCaverns",
+    "name": "Wailing Caverns",
     "id": 718,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -247,7 +247,7 @@
     ]
   },
   {
-    "name": "TheDeadmines",
+    "name": "The Deadmines",
     "id": 1581,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -451,7 +451,7 @@
     ]
   },
   {
-    "name": "ShadowfangKeep",
+    "name": "Shadowfang Keep",
     "id": 209,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -732,7 +732,7 @@
     ]
   },
   {
-    "name": "BlackfathomDeeps",
+    "name": "Blackfathom Deeps",
     "id": 719,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -920,7 +920,7 @@
     ]
   },
   {
-    "name": "TheStockade",
+    "name": "The Stockade",
     "id": 717,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -1211,7 +1211,7 @@
     ]
   },
   {
-    "name": "RazorfenKraul",
+    "name": "Razorfen Kraul",
     "id": 491,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -1408,7 +1408,7 @@
     ]
   },
   {
-    "name": "ScarletMonasteryGraveyard",
+    "name": "Scarlet Monastery - Graveyard",
     "id": 796,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -1660,7 +1660,7 @@
     ]
   },
   {
-    "name": "ScarletMonasteryLibrary",
+    "name": "Scarlet Monastery - Library",
     "id": 796,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -1821,7 +1821,7 @@
     ]
   },
   {
-    "name": "ScarletMonasteryArmory",
+    "name": "Scarlet Monastery - Armory",
     "id": 796,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -1955,7 +1955,7 @@
     ]
   },
   {
-    "name": "ScarletMonasteryCathedral",
+    "name": "Scarlet Monastery - Cathedral",
     "id": 796,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -2139,7 +2139,7 @@
     ]
   },
   {
-    "name": "RazorfenDowns",
+    "name": "Razorfen Downs",
     "id": 722,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -3298,7 +3298,7 @@
     ]
   },
   {
-    "name": "TheTempleOfAtal'Hakkar",
+    "name": "The Temple Of Atal'Hakkar",
     "id": 1477,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -3751,7 +3751,7 @@
     ]
   },
   {
-    "name": "BlackrockDepths",
+    "name": "Blackrock Depths",
     "id": 1584,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -4809,7 +4809,7 @@
     ]
   },
   {
-    "name": "LowerBlackrockSpire",
+    "name": "Lower Blackrock Spire",
     "id": 1583,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -5359,7 +5359,7 @@
     ]
   },
   {
-    "name": "UpperBlackrockSpire",
+    "name": "Upper Blackrock Spire",
     "id": 1583,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -5847,7 +5847,7 @@
     ]
   },
   {
-    "name": "DireMaulEast",
+    "name": "Dire Maul - East",
     "id": 2557,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -6082,7 +6082,7 @@
     ]
   },
   {
-    "name": "DireMaulWest",
+    "name": "Dire Maul - West",
     "id": 2557,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -6375,7 +6375,7 @@
     ]
   },
   {
-    "name": "DireMaulNorth",
+    "name": "Dire Maul - North",
     "id": 2557,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -9033,7 +9033,7 @@
     ]
   },
   {
-    "name": "WorldBosses",
+    "name": "World Bosses",
     "id": 0,
     "contentType": "RAID40_CONTENT",
     "sources": [
@@ -9594,7 +9594,7 @@
     ]
   },
   {
-    "name": "MoltenCore",
+    "name": "Molten Core",
     "id": 2717,
     "contentType": "RAID40_CONTENT",
     "sources": [
@@ -10601,7 +10601,7 @@
     ]
   },
   {
-    "name": "Onyxia",
+    "name": "Onyxia's Lair",
     "id": 2159,
     "contentType": "RAID40_CONTENT",
     "sources": [
@@ -11739,7 +11739,7 @@
     ]
   },
   {
-    "name": "BlackwingLair",
+    "name": "Blackwing Lair",
     "id": 2677,
     "contentType": "RAID40_CONTENT",
     "sources": [
@@ -12508,7 +12508,7 @@
     ]
   },
   {
-    "name": "TheRuinsofAhnQiraj",
+    "name": "The Ruins of AhnQiraj",
     "id": 3429,
     "contentType": "RAID20_CONTENT",
     "sources": [
@@ -13113,7 +13113,7 @@
     ]
   },
   {
-    "name": "TheTempleofAhnQiraj",
+    "name": "The Temple of AhnQiraj",
     "id": 3428,
     "contentType": "RAID40_CONTENT",
     "sources": [

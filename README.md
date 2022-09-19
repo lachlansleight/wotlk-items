@@ -10,10 +10,10 @@ At the moment (v0.1.0) there are plenty of bugs - I know for a fact that the sta
 
 Things still to do:
 
--   [ ] Fix the WotLK loot tables
--   [ ] Fix the broken instance names, boss names, etc.
--   [ ] Replace tier tokens with the actual tier pieces they can be exchanged for
--   [ ] Properly cache the parsed items and instances into a compact JSON file to be loaded and cached
+-   [x] Fix the WotLK loot tables
+-   [x] Fix the broken instance names, boss names, etc.
+-   [ ] Create exchange list (tier tokens, sunmotes, quest items e.g. verdant sphere, etc)
+-   [ ] Create dense, finalized equippable item list
 -   [ ] Figure out why some stat weightings are incorrect
 -   [ ] Make it possible to save a character for easy selection later (assuming nothing has changed on eightyupgrades)
 -   [ ] Show all three stat weightings simultaneously

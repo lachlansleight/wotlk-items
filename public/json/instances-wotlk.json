@@ -1,6 +1,6 @@
 [
   {
-    "name": "AhnKahet",
+    "name": "Ahn'Kahet: The Old Kingdom",
     "id": 4494,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -264,7 +264,7 @@
     ]
   },
   {
-    "name": "AzjolNerub",
+    "name": "Azjol-Nerub",
     "id": 4277,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -446,7 +446,7 @@
     ]
   },
   {
-    "name": "DrakTharonKeep",
+    "name": "Drak'Tharon Keep",
     "id": 4196,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -727,21 +727,21 @@
       {
         "name": "Drakkari Colossus",
         "npcId": [
-          29307
+          29573
         ],
         "objectId": [],
         "NORMAL_DIFF": [
           {
             "id": 35591,
-            "droprate": 0
+            "droprate": 0.4
           },
           {
             "id": 35592,
-            "droprate": 0
+            "droprate": 0.3
           },
           {
             "id": 35590,
-            "droprate": 0
+            "droprate": 0.3
           }
         ],
         "HEROIC_DIFF": [
@@ -751,19 +751,19 @@
           },
           {
             "id": 37637,
-            "droprate": 0
+            "droprate": 0.21052631578947367
           },
           {
             "id": 37636,
-            "droprate": 0
+            "droprate": 0.21052631578947367
           },
           {
             "id": 37634,
-            "droprate": 0
+            "droprate": 0.21052631578947367
           },
           {
             "id": 37635,
-            "droprate": 0
+            "droprate": 0.3157894736842105
           }
         ]
       },
@@ -933,7 +933,7 @@
     ]
   },
   {
-    "name": "HallsofLightning",
+    "name": "Halls of Lightning",
     "id": 4272,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -1208,7 +1208,7 @@
     ]
   },
   {
-    "name": "HallsofStone",
+    "name": "Halls of Stone",
     "id": 4264,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -1299,7 +1299,10 @@
         "npcId": [
           28234
         ],
-        "objectId": [],
+        "objectId": [
+          190586,
+          193996
+        ],
         "NORMAL_DIFF": [
           {
             "id": 35677,
@@ -1321,19 +1324,19 @@
           },
           {
             "id": 37655,
-            "droprate": 0
+            "droprate": 0.16666666666666666
           },
           {
             "id": 37656,
-            "droprate": 0
+            "droprate": 0.16666666666666666
           },
           {
             "id": 37654,
-            "droprate": 0
+            "droprate": 0.5
           },
           {
             "id": 37653,
-            "droprate": 0
+            "droprate": 0.16666666666666666
           }
         ]
       },
@@ -1439,7 +1442,7 @@
     ]
   },
   {
-    "name": "TheCullingOfStratholme",
+    "name": "The Culling of Stratholme",
     "id": 4100,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -1589,7 +1592,10 @@
         "npcId": [
           26533
         ],
-        "objectId": [],
+        "objectId": [
+          190663,
+          193597
+        ],
         "NORMAL_DIFF": [
           {
             "id": 37113,
@@ -1631,43 +1637,43 @@
           },
           {
             "id": 37696,
-            "droprate": 0
+            "droprate": 0.3888888888888889
           },
           {
             "id": 37695,
-            "droprate": 0
+            "droprate": 0.05555555555555555
           },
           {
             "id": 37694,
-            "droprate": 0
+            "droprate": 0.1111111111111111
           },
           {
             "id": 37693,
-            "droprate": 0
+            "droprate": 0.1111111111111111
           },
           {
             "id": 43085,
-            "droprate": 0
+            "droprate": 0.05555555555555555
           },
           {
             "id": 37691,
-            "droprate": 0
+            "droprate": 0.2222222222222222
           },
           {
             "id": 37690,
-            "droprate": 0
+            "droprate": 0.16666666666666666
           },
           {
             "id": 37689,
-            "droprate": 0
+            "droprate": 0.16666666666666666
           },
           {
             "id": 37692,
-            "droprate": 0
+            "droprate": 0.2222222222222222
           },
           {
             "id": 43102,
-            "droprate": 0
+            "droprate": 0.8888888888888888
           }
         ]
       },
@@ -1709,14 +1715,14 @@
     ]
   },
   {
-    "name": "TheNexus",
+    "name": "The Nexus",
     "id": 4265,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
       {
-        "name": "AtlasLoot:GetRetByFaction(Commander Kolurg, AL[\"Commander Stoutbeard\"])",
+        "name": "Commander Kolurg (Horde)",
         "npcId": [
-          null
+          26798
         ],
         "objectId": [],
         "HEROIC_DIFF": [
@@ -1726,19 +1732,48 @@
           },
           {
             "id": 37728,
-            "droprate": 0
+            "droprate": 0.15384615384615385
           },
           {
             "id": 37731,
-            "droprate": 0
+            "droprate": 0.07692307692307693
           },
           {
             "id": 37730,
-            "droprate": 0
+            "droprate": 0.38461538461538464
           },
           {
             "id": 37729,
+            "droprate": 0.23076923076923078
+          }
+        ]
+      },
+      {
+        "name": "Commander Soutbeard (Alliance)",
+        "npcId": [
+          26796
+        ],
+        "objectId": [],
+        "HEROIC_DIFF": [
+          {
+            "id": 47241,
             "droprate": 0
+          },
+          {
+            "id": 37728,
+            "droprate": 0.5
+          },
+          {
+            "id": 37731,
+            "droprate": 0.25
+          },
+          {
+            "id": 37730,
+            "droprate": 0.125
+          },
+          {
+            "id": 37729,
+            "droprate": 0.25
           }
         ]
       },
@@ -1949,7 +1984,7 @@
     ]
   },
   {
-    "name": "TheOculus",
+    "name": "The Oculus",
     "id": 4228,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -2232,7 +2267,7 @@
     ]
   },
   {
-    "name": "VioletHold",
+    "name": "Violet Hold",
     "id": 4415,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -2560,7 +2595,7 @@
     ]
   },
   {
-    "name": "UtgardeKeep",
+    "name": "Utgarde Keep",
     "id": 206,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -2749,7 +2784,7 @@
     ]
   },
   {
-    "name": "UtgardePinnacle",
+    "name": "Utgarde Pinnacle",
     "id": 1196,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -3024,7 +3059,7 @@
     ]
   },
   {
-    "name": "TrialoftheChampion",
+    "name": "Trial of the Champion",
     "id": 4723,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -3462,7 +3497,7 @@
     ]
   },
   {
-    "name": "ForgeOfSouls",
+    "name": "Forge of Souls",
     "id": 4809,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -3655,7 +3690,7 @@
     ]
   },
   {
-    "name": "PitOfSaron",
+    "name": "Pit of Saron",
     "id": 4813,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -3892,7 +3927,7 @@
     ]
   },
   {
-    "name": "HallsOfReflection",
+    "name": "Halls of Reflection",
     "id": 4820,
     "contentType": "DUNGEON_CONTENT",
     "sources": [
@@ -4128,7 +4163,7 @@
     ]
   },
   {
-    "name": "NaxxramasWrath",
+    "name": "Naxxramas",
     "id": 3456,
     "contentType": "RAID_CONTENT",
     "sources": [
@@ -6387,7 +6422,7 @@
     ]
   },
   {
-    "name": "TheEyeOfEternity",
+    "name": "The Eye of Eternity",
     "id": 4500,
     "contentType": "RAID_CONTENT",
     "sources": [
@@ -6549,7 +6584,7 @@
     ]
   },
   {
-    "name": "ObsidianSanctum",
+    "name": "Obsidian Sanctum",
     "id": 4493,
     "contentType": "RAID_CONTENT",
     "sources": [
@@ -6669,7 +6704,7 @@
         ]
       },
       {
-        "name": "format(BONUS_LOOT_SPLIT, Sartharion, AL[\"Bonus Loot\"])",
+        "name": "One Drake Left",
         "npcId": [
           28860
         ],
@@ -6694,7 +6729,34 @@
           {
             "id": 43992,
             "droprate": 0.136
+          }
+        ],
+        "RAID25_DIFF": [
+          {
+            "id": 44002,
+            "droprate": 0.16666666666666666
           },
+          {
+            "id": 44003,
+            "droprate": 0.16666666666666666
+          },
+          {
+            "id": 44004,
+            "droprate": 0.3333333333333333
+          },
+          {
+            "id": 44000,
+            "droprate": 0.3333333333333333
+          }
+        ]
+      },
+      {
+        "name": "Two Drakes Left",
+        "npcId": [
+          28860
+        ],
+        "objectId": [],
+        "RAID10_DIFF": [
           {
             "id": 43995,
             "droprate": 0.145
@@ -6714,29 +6776,9 @@
           {
             "id": 43993,
             "droprate": 0.145
-          },
-          {
-            "id": 43986,
-            "droprate": 0.6659999999999999
           }
         ],
         "RAID25_DIFF": [
-          {
-            "id": 44002,
-            "droprate": 0.16666666666666666
-          },
-          {
-            "id": 44003,
-            "droprate": 0.16666666666666666
-          },
-          {
-            "id": 44004,
-            "droprate": 0.3333333333333333
-          },
-          {
-            "id": 44000,
-            "droprate": 0.3333333333333333
-          },
           {
             "id": 44005,
             "droprate": 0.16666666666666666
@@ -6756,7 +6798,22 @@
           {
             "id": 44006,
             "droprate": 0.16666666666666666
-          },
+          }
+        ]
+      },
+      {
+        "name": "Three Drakes Left",
+        "npcId": [
+          28860
+        ],
+        "objectId": [],
+        "RAID10_DIFF": [
+          {
+            "id": 43986,
+            "droprate": 0.6659999999999999
+          }
+        ],
+        "RAID25_DIFF": [
           {
             "id": 43954,
             "droprate": 0.6666666666666666
@@ -7313,7 +7370,9 @@
       {
         "name": "The Iron Council",
         "npcId": [
-          32857
+          32857,
+          32927,
+          32867
         ],
         "objectId": [],
         "RAID10_DIFF": [
@@ -7323,11 +7382,11 @@
           },
           {
             "id": 45423,
-            "droprate": 0.14800000000000002
+            "droprate": 0.17300000000000001
           },
           {
             "id": 45324,
-            "droprate": 0.153
+            "droprate": 0.17300000000000001
           },
           {
             "id": 45378,
@@ -7335,11 +7394,11 @@
           },
           {
             "id": 45329,
-            "droprate": 0.12400000000000001
+            "droprate": 0.179
           },
           {
             "id": 45333,
-            "droprate": 0.18100000000000002
+            "droprate": 0.195
           },
           {
             "id": 45330,
@@ -7347,49 +7406,49 @@
           },
           {
             "id": 45418,
-            "droprate": 0.136
+            "droprate": 0.18
           },
           {
             "id": 45332,
-            "droprate": 0.146
+            "droprate": 0.177
           },
           {
             "id": 45331,
-            "droprate": 0.165
+            "droprate": 0.17
           },
           {
             "id": 45455,
-            "droprate": 0
+            "droprate": 0.19399999999999998
           },
           {
             "id": 45447,
-            "droprate": 0
+            "droprate": 0.162
           },
           {
             "id": 45456,
-            "droprate": 0
+            "droprate": 0.165
           },
           {
             "id": 45449,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 45448,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 45506,
-            "droprate": 0
+            "droprate": 0.845
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 45224,
-            "droprate": 0.146
+            "droprate": 0.18100000000000002
           },
           {
             "id": 45240,
-            "droprate": 0.09699999999999999
+            "droprate": 0.16399999999999998
           },
           {
             "id": 45238,
@@ -7405,19 +7464,19 @@
           },
           {
             "id": 45227,
-            "droprate": 0.141
+            "droprate": 0.182
           },
           {
             "id": 45239,
-            "droprate": 0.15
+            "droprate": 0.171
           },
           {
             "id": 45226,
-            "droprate": 0.14800000000000002
+            "droprate": 0.155
           },
           {
             "id": 45225,
-            "droprate": 0.11900000000000001
+            "droprate": 0.138
           },
           {
             "id": 45228,
@@ -7429,15 +7488,15 @@
           },
           {
             "id": 45236,
-            "droprate": 0.14400000000000002
+            "droprate": 0.17
           },
           {
             "id": 45235,
-            "droprate": 0.126
+            "droprate": 0.163
           },
           {
             "id": 45233,
-            "droprate": 0.12400000000000001
+            "droprate": 0.179
           },
           {
             "id": 45234,
@@ -7445,35 +7504,35 @@
           },
           {
             "id": 45038,
-            "droprate": 0.071
+            "droprate": 0.129
           },
           {
             "id": 45242,
-            "droprate": 0
+            "droprate": 0.132
           },
           {
             "id": 45245,
-            "droprate": 0
+            "droprate": 0.138
           },
           {
             "id": 45244,
-            "droprate": 0
+            "droprate": 0.11900000000000001
           },
           {
             "id": 45241,
-            "droprate": 0
+            "droprate": 0.126
           },
           {
             "id": 45243,
-            "droprate": 0
+            "droprate": 0.154
           },
           {
             "id": 45607,
-            "droprate": 0
+            "droprate": 0.136
           },
           {
             "id": 45857,
-            "droprate": 0
+            "droprate": 0.7959999999999999
           }
         ]
       },
@@ -7859,85 +7918,89 @@
         "npcId": [
           32845
         ],
-        "objectId": [],
+        "objectId": [
+          194200,
+          194201
+        ],
+        "fromWotlkDb": true,
         "RAID10_DIFF": [
           {
             "id": 45873,
-            "droprate": 0.17300000000000001
+            "droprate": 0.2
           },
           {
             "id": 45464,
-            "droprate": 0.149
+            "droprate": 0
           },
           {
             "id": 45874,
-            "droprate": 0.196
+            "droprate": 0.2
           },
           {
             "id": 45458,
-            "droprate": 0.177
+            "droprate": 0.2
           },
           {
             "id": 45872,
-            "droprate": 0.157
+            "droprate": 0.2
           },
           {
             "id": 45888,
-            "droprate": 0
+            "droprate": 0.2
           },
           {
             "id": 45876,
-            "droprate": 0
+            "droprate": 0.2
           },
           {
             "id": 45886,
-            "droprate": 0
+            "droprate": 0.2
           },
           {
             "id": 45887,
-            "droprate": 0
+            "droprate": 0.2
           },
           {
             "id": 45877,
-            "droprate": 0
+            "droprate": 0.2
           },
           {
             "id": 45786,
-            "droprate": 0
+            "droprate": 1
           },
           {
             "id": 45650,
-            "droprate": 0.24800000000000003
+            "droprate": 0.33333
           },
           {
             "id": 45651,
-            "droprate": 0.247
+            "droprate": 0.33333
           },
           {
             "id": 45652,
-            "droprate": 0.341
+            "droprate": 0.33333
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 45453,
-            "droprate": 0.158
+            "droprate": 0.2
           },
           {
             "id": 45454,
-            "droprate": 0.163
+            "droprate": 0.2
           },
           {
             "id": 45452,
-            "droprate": 0.18100000000000002
+            "droprate": 0.2
           },
           {
             "id": 45451,
-            "droprate": 0.131
+            "droprate": 0.2
           },
           {
             "id": 45450,
-            "droprate": 0.139
+            "droprate": 0.2
           },
           {
             "id": 45461,
@@ -7965,23 +8028,23 @@
           },
           {
             "id": 45815,
-            "droprate": 0
+            "droprate": 1
           },
           {
             "id": 45038,
-            "droprate": 0.073
+            "droprate": 0
           },
           {
             "id": 45632,
-            "droprate": 0.40700000000000003
+            "droprate": 0.33333
           },
           {
             "id": 45633,
-            "droprate": 0.40700000000000003
+            "droprate": 0.33333
           },
           {
             "id": 45634,
-            "droprate": 0.512
+            "droprate": 0.33333
           }
         ]
       },
@@ -8548,167 +8611,167 @@
       {
         "name": "Yogg-Saron",
         "npcId": [
-          33271
+          33288
         ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 46030,
-            "droprate": 0
+            "droprate": 0.171
           },
           {
             "id": 46019,
-            "droprate": 0
+            "droprate": 0.11599999999999999
           },
           {
             "id": 46028,
-            "droprate": 0
+            "droprate": 0.147
           },
           {
             "id": 46022,
-            "droprate": 0
+            "droprate": 0.147
           },
           {
             "id": 46021,
-            "droprate": 0
+            "droprate": 0.19399999999999998
           },
           {
             "id": 46024,
-            "droprate": 0
+            "droprate": 0.147
           },
           {
             "id": 46016,
-            "droprate": 0
+            "droprate": 0.09300000000000001
           },
           {
             "id": 46031,
-            "droprate": 0
+            "droprate": 0.14
           },
           {
             "id": 46025,
-            "droprate": 0
+            "droprate": 0.18600000000000003
           },
           {
             "id": 46018,
-            "droprate": 0
+            "droprate": 0.209
           },
           {
             "id": 45635,
-            "droprate": 0
+            "droprate": 0.225
           },
           {
             "id": 45636,
-            "droprate": 0
+            "droprate": 0.24
           },
           {
             "id": 45637,
-            "droprate": 0
+            "droprate": 0.27899999999999997
           },
           {
             "id": 46068,
-            "droprate": 0
+            "droprate": 0.11599999999999999
           },
           {
             "id": 46095,
-            "droprate": 0
+            "droprate": 0.12400000000000001
           },
           {
             "id": 46096,
-            "droprate": 0
+            "droprate": 0.109
           },
           {
             "id": 46097,
-            "droprate": 0
+            "droprate": 0.10099999999999999
           },
           {
             "id": 46067,
-            "droprate": 0
+            "droprate": 0.09300000000000001
           },
           {
             "id": 46312,
-            "droprate": 0
+            "droprate": 0.37200000000000005
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 45529,
-            "droprate": 0
+            "droprate": 0.149
           },
           {
             "id": 45532,
-            "droprate": 0
+            "droprate": 0.18
           },
           {
             "id": 45523,
-            "droprate": 0
+            "droprate": 0.141
           },
           {
             "id": 45524,
-            "droprate": 0
+            "droprate": 0.212
           },
           {
             "id": 45531,
-            "droprate": 0
+            "droprate": 0.16899999999999998
           },
           {
             "id": 45525,
-            "droprate": 0
+            "droprate": 0.16899999999999998
           },
           {
             "id": 45530,
-            "droprate": 0
+            "droprate": 0.11800000000000001
           },
           {
             "id": 45522,
-            "droprate": 0
+            "droprate": 0.129
           },
           {
             "id": 45527,
-            "droprate": 0
+            "droprate": 0.192
           },
           {
             "id": 45521,
-            "droprate": 0
+            "droprate": 0.149
           },
           {
             "id": 45038,
-            "droprate": 0.139
+            "droprate": 0.561
           },
           {
             "id": 45656,
-            "droprate": 0
+            "droprate": 0.424
           },
           {
             "id": 45657,
-            "droprate": 0
+            "droprate": 0.41600000000000004
           },
           {
             "id": 45658,
-            "droprate": 0
+            "droprate": 0.502
           },
           {
             "id": 45537,
-            "droprate": 0
+            "droprate": 0.161
           },
           {
             "id": 45536,
-            "droprate": 0
+            "droprate": 0.18
           },
           {
             "id": 45534,
-            "droprate": 0
+            "droprate": 0.075
           },
           {
             "id": 45535,
-            "droprate": 0
+            "droprate": 0.133
           },
           {
             "id": 45533,
-            "droprate": 0
+            "droprate": 0.149
           },
           {
             "id": 45693,
-            "droprate": 0
+            "droprate": 0.043
           }
         ]
       },
@@ -8897,110 +8960,2977 @@
     ]
   },
   {
-    "name": "TrialoftheCrusader",
+    "name": "Trial of the Crusader",
     "id": 4722,
     "contentType": "RAID_CONTENT",
     "sources": [
       {
         "name": "The Beasts of Northrend",
+        "npcId": [
+          34797
+        ],
         "objectId": [],
-        "RAID10_DIFF": [],
-        "RAID10H_DIFF": [],
-        "RAID25_DIFF": [],
-        "RAID25H_DIFF": []
+        "RAID10_DIFF": [
+          {
+            "id": 47855,
+            "droprate": 0.063
+          },
+          {
+            "id": 47857,
+            "droprate": 0.083
+          },
+          {
+            "id": 47853,
+            "droprate": 0.077
+          },
+          {
+            "id": 47860,
+            "droprate": 0.076
+          },
+          {
+            "id": 47850,
+            "droprate": 0.062000000000000006
+          },
+          {
+            "id": 47852,
+            "droprate": 0.083
+          },
+          {
+            "id": 47851,
+            "droprate": 0.064
+          },
+          {
+            "id": 47859,
+            "droprate": 0.08900000000000001
+          },
+          {
+            "id": 47858,
+            "droprate": 0.07200000000000001
+          },
+          {
+            "id": 47849,
+            "droprate": 0.08
+          },
+          {
+            "id": 47854,
+            "droprate": 0.078
+          },
+          {
+            "id": 47856,
+            "droprate": 0.063
+          },
+          {
+            "id": 47617,
+            "droprate": 0.078
+          },
+          {
+            "id": 47613,
+            "droprate": 0.062000000000000006
+          },
+          {
+            "id": 47608,
+            "droprate": 0.071
+          },
+          {
+            "id": 47616,
+            "droprate": 0.08800000000000001
+          },
+          {
+            "id": 47610,
+            "droprate": 0.076
+          },
+          {
+            "id": 47611,
+            "droprate": 0.049
+          },
+          {
+            "id": 47609,
+            "droprate": 0.064
+          },
+          {
+            "id": 47615,
+            "droprate": 0.07
+          },
+          {
+            "id": 47614,
+            "droprate": 0.065
+          },
+          {
+            "id": 47607,
+            "droprate": 0.078
+          },
+          {
+            "id": 47578,
+            "droprate": 0.066
+          },
+          {
+            "id": 47612,
+            "droprate": 0.052000000000000005
+          }
+        ],
+        "RAID10H_DIFF": [
+          {
+            "id": 47994,
+            "droprate": 0.063
+          },
+          {
+            "id": 47996,
+            "droprate": 0.059000000000000004
+          },
+          {
+            "id": 47992,
+            "droprate": 0.07200000000000001
+          },
+          {
+            "id": 47999,
+            "droprate": 0.106
+          },
+          {
+            "id": 47989,
+            "droprate": 0.1
+          },
+          {
+            "id": 47991,
+            "droprate": 0.071
+          },
+          {
+            "id": 47990,
+            "droprate": 0.085
+          },
+          {
+            "id": 47998,
+            "droprate": 0.087
+          },
+          {
+            "id": 47997,
+            "droprate": 0.059000000000000004
+          },
+          {
+            "id": 47988,
+            "droprate": 0.049
+          },
+          {
+            "id": 47993,
+            "droprate": 0.069
+          },
+          {
+            "id": 47995,
+            "droprate": 0.075
+          },
+          {
+            "id": 47921,
+            "droprate": 0.08199999999999999
+          },
+          {
+            "id": 47923,
+            "droprate": 0.055999999999999994
+          },
+          {
+            "id": 47919,
+            "droprate": 0.087
+          },
+          {
+            "id": 47926,
+            "droprate": 0.065
+          },
+          {
+            "id": 47916,
+            "droprate": 0.063
+          },
+          {
+            "id": 47918,
+            "droprate": 0.06
+          },
+          {
+            "id": 47917,
+            "droprate": 0.062000000000000006
+          },
+          {
+            "id": 47924,
+            "droprate": 0.071
+          },
+          {
+            "id": 47925,
+            "droprate": 0.071
+          },
+          {
+            "id": 47915,
+            "droprate": 0.087
+          },
+          {
+            "id": 47920,
+            "droprate": 0.061
+          },
+          {
+            "id": 47922,
+            "droprate": 0.07400000000000001
+          }
+        ],
+        "RAID25_DIFF": [
+          {
+            "id": 47257,
+            "droprate": 0
+          },
+          {
+            "id": 47256,
+            "droprate": 0.198
+          },
+          {
+            "id": 47264,
+            "droprate": 0
+          },
+          {
+            "id": 47258,
+            "droprate": 0.079
+          },
+          {
+            "id": 47259,
+            "droprate": 0
+          },
+          {
+            "id": 47262,
+            "droprate": 0.129
+          },
+          {
+            "id": 47251,
+            "droprate": 0.066
+          },
+          {
+            "id": 47265,
+            "droprate": 0.11
+          },
+          {
+            "id": 47254,
+            "droprate": 0.14800000000000002
+          },
+          {
+            "id": 47253,
+            "droprate": 0.10400000000000001
+          },
+          {
+            "id": 47263,
+            "droprate": 0.10400000000000001
+          },
+          {
+            "id": 47242,
+            "droprate": 0.705
+          },
+          {
+            "id": 47252,
+            "droprate": 0.126
+          },
+          {
+            "id": 47261,
+            "droprate": 0.132
+          },
+          {
+            "id": 47255,
+            "droprate": 0.085
+          },
+          {
+            "id": 47260,
+            "droprate": 0.126
+          },
+          {
+            "id": 46970,
+            "droprate": 0.066
+          },
+          {
+            "id": 46976,
+            "droprate": 0.075
+          },
+          {
+            "id": 46992,
+            "droprate": 0.07200000000000001
+          },
+          {
+            "id": 46972,
+            "droprate": 0
+          },
+          {
+            "id": 46974,
+            "droprate": 0
+          },
+          {
+            "id": 46988,
+            "droprate": 0.07200000000000001
+          },
+          {
+            "id": 46960,
+            "droprate": 0.069
+          },
+          {
+            "id": 46990,
+            "droprate": 0.066
+          },
+          {
+            "id": 46962,
+            "droprate": 0.085
+          },
+          {
+            "id": 46961,
+            "droprate": 0
+          },
+          {
+            "id": 46985,
+            "droprate": 0
+          },
+          {
+            "id": 47242,
+            "droprate": 0.705
+          },
+          {
+            "id": 46959,
+            "droprate": 0
+          },
+          {
+            "id": 46979,
+            "droprate": 0
+          },
+          {
+            "id": 46958,
+            "droprate": 0
+          },
+          {
+            "id": 46963,
+            "droprate": 0.066
+          }
+        ],
+        "RAID25H_DIFF": [
+          {
+            "id": 47418,
+            "droprate": 0.094
+          },
+          {
+            "id": 47417,
+            "droprate": 0.06
+          },
+          {
+            "id": 47425,
+            "droprate": 0.087
+          },
+          {
+            "id": 47419,
+            "droprate": 0.085
+          },
+          {
+            "id": 47420,
+            "droprate": 0.098
+          },
+          {
+            "id": 47423,
+            "droprate": 0.069
+          },
+          {
+            "id": 47412,
+            "droprate": 0.064
+          },
+          {
+            "id": 47426,
+            "droprate": 0.083
+          },
+          {
+            "id": 47415,
+            "droprate": 0.08900000000000001
+          },
+          {
+            "id": 47414,
+            "droprate": 0.081
+          },
+          {
+            "id": 47424,
+            "droprate": 0.071
+          },
+          {
+            "id": 47242,
+            "droprate": 0.705
+          },
+          {
+            "id": 47413,
+            "droprate": 0.098
+          },
+          {
+            "id": 47422,
+            "droprate": 0.08900000000000001
+          },
+          {
+            "id": 47416,
+            "droprate": 0
+          },
+          {
+            "id": 47421,
+            "droprate": 0.067
+          },
+          {
+            "id": 46971,
+            "droprate": 0.069
+          },
+          {
+            "id": 46977,
+            "droprate": 0.052000000000000005
+          },
+          {
+            "id": 46993,
+            "droprate": 0
+          },
+          {
+            "id": 46973,
+            "droprate": 0.075
+          },
+          {
+            "id": 46975,
+            "droprate": 0
+          },
+          {
+            "id": 46989,
+            "droprate": 0
+          },
+          {
+            "id": 46965,
+            "droprate": 0.057999999999999996
+          },
+          {
+            "id": 46991,
+            "droprate": 0.057999999999999996
+          },
+          {
+            "id": 46968,
+            "droprate": 0
+          },
+          {
+            "id": 46967,
+            "droprate": 0.062000000000000006
+          },
+          {
+            "id": 46986,
+            "droprate": 0.057999999999999996
+          },
+          {
+            "id": 47242,
+            "droprate": 0.705
+          },
+          {
+            "id": 46966,
+            "droprate": 0.062000000000000006
+          },
+          {
+            "id": 46980,
+            "droprate": 0.083
+          },
+          {
+            "id": 46969,
+            "droprate": 0
+          },
+          {
+            "id": 46964,
+            "droprate": 0.062000000000000006
+          }
+        ]
       },
       {
         "name": "Lord Jaraxxus",
+        "npcId": [
+          34780
+        ],
         "objectId": [],
-        "RAID10_DIFF": [],
-        "RAID10H_DIFF": [],
-        "RAID25_DIFF": [],
-        "RAID25H_DIFF": []
+        "RAID10_DIFF": [
+          {
+            "id": 47861,
+            "droprate": 0.065
+          },
+          {
+            "id": 47865,
+            "droprate": 0.08199999999999999
+          },
+          {
+            "id": 47863,
+            "droprate": 0.066
+          },
+          {
+            "id": 47866,
+            "droprate": 0.08800000000000001
+          },
+          {
+            "id": 49236,
+            "droprate": 0.071
+          },
+          {
+            "id": 47867,
+            "droprate": 0.066
+          },
+          {
+            "id": 47869,
+            "droprate": 0.053
+          },
+          {
+            "id": 47870,
+            "droprate": 0.068
+          },
+          {
+            "id": 47872,
+            "droprate": 0.066
+          },
+          {
+            "id": 47864,
+            "droprate": 0.06
+          },
+          {
+            "id": 47862,
+            "droprate": 0.07400000000000001
+          },
+          {
+            "id": 47868,
+            "droprate": 0.055999999999999994
+          },
+          {
+            "id": 47871,
+            "droprate": 0.063
+          },
+          {
+            "id": 47663,
+            "droprate": 0.069
+          },
+          {
+            "id": 47620,
+            "droprate": 0.076
+          },
+          {
+            "id": 47669,
+            "droprate": 0.086
+          },
+          {
+            "id": 47621,
+            "droprate": 0.077
+          },
+          {
+            "id": 49235,
+            "droprate": 0.063
+          },
+          {
+            "id": 47683,
+            "droprate": 0.055999999999999994
+          },
+          {
+            "id": 47680,
+            "droprate": 0.047
+          },
+          {
+            "id": 47711,
+            "droprate": 0.059000000000000004
+          },
+          {
+            "id": 47619,
+            "droprate": 0.064
+          },
+          {
+            "id": 47679,
+            "droprate": 0.069
+          },
+          {
+            "id": 47618,
+            "droprate": 0.063
+          },
+          {
+            "id": 47703,
+            "droprate": 0.08199999999999999
+          },
+          {
+            "id": 47676,
+            "droprate": 0.06
+          }
+        ],
+        "RAID10H_DIFF": [
+          {
+            "id": 48000,
+            "droprate": 0.1
+          },
+          {
+            "id": 48004,
+            "droprate": 0.054000000000000006
+          },
+          {
+            "id": 48002,
+            "droprate": 0.076
+          },
+          {
+            "id": 48005,
+            "droprate": 0.069
+          },
+          {
+            "id": 49237,
+            "droprate": 0.064
+          },
+          {
+            "id": 48006,
+            "droprate": 0.046
+          },
+          {
+            "id": 48008,
+            "droprate": 0.054000000000000006
+          },
+          {
+            "id": 48009,
+            "droprate": 0.06
+          },
+          {
+            "id": 48011,
+            "droprate": 0.061
+          },
+          {
+            "id": 48003,
+            "droprate": 0.062000000000000006
+          },
+          {
+            "id": 48001,
+            "droprate": 0.068
+          },
+          {
+            "id": 48007,
+            "droprate": 0.057
+          },
+          {
+            "id": 48010,
+            "droprate": 0.08800000000000001
+          },
+          {
+            "id": 47927,
+            "droprate": 0.069
+          },
+          {
+            "id": 47931,
+            "droprate": 0.08199999999999999
+          },
+          {
+            "id": 47929,
+            "droprate": 0.068
+          },
+          {
+            "id": 47932,
+            "droprate": 0.085
+          },
+          {
+            "id": 49238,
+            "droprate": 0.054000000000000006
+          },
+          {
+            "id": 47933,
+            "droprate": 0.055999999999999994
+          },
+          {
+            "id": 47935,
+            "droprate": 0.08199999999999999
+          },
+          {
+            "id": 47937,
+            "droprate": 0.059000000000000004
+          },
+          {
+            "id": 47930,
+            "droprate": 0.068
+          },
+          {
+            "id": 47939,
+            "droprate": 0.047
+          },
+          {
+            "id": 47928,
+            "droprate": 0.065
+          },
+          {
+            "id": 47934,
+            "droprate": 0.077
+          },
+          {
+            "id": 47938,
+            "droprate": 0.062000000000000006
+          }
+        ],
+        "RAID25_DIFF": [
+          {
+            "id": 47275,
+            "droprate": 0
+          },
+          {
+            "id": 47274,
+            "droprate": 0.11199999999999999
+          },
+          {
+            "id": 47270,
+            "droprate": 0.086
+          },
+          {
+            "id": 47277,
+            "droprate": 0.113
+          },
+          {
+            "id": 47280,
+            "droprate": 0.086
+          },
+          {
+            "id": 47268,
+            "droprate": 0.078
+          },
+          {
+            "id": 47279,
+            "droprate": 0.09300000000000001
+          },
+          {
+            "id": 47273,
+            "droprate": 0.099
+          },
+          {
+            "id": 47269,
+            "droprate": 0.091
+          },
+          {
+            "id": 47242,
+            "droprate": 0.783
+          },
+          {
+            "id": 47272,
+            "droprate": 0.113
+          },
+          {
+            "id": 47278,
+            "droprate": 0.10400000000000001
+          },
+          {
+            "id": 47271,
+            "droprate": 0.08199999999999999
+          },
+          {
+            "id": 47276,
+            "droprate": 0.095
+          },
+          {
+            "id": 47266,
+            "droprate": 0.106
+          },
+          {
+            "id": 47267,
+            "droprate": 0.10400000000000001
+          },
+          {
+            "id": 47042,
+            "droprate": 0.07200000000000001
+          },
+          {
+            "id": 47051,
+            "droprate": 0
+          },
+          {
+            "id": 47000,
+            "droprate": 0
+          },
+          {
+            "id": 47055,
+            "droprate": 0
+          },
+          {
+            "id": 47056,
+            "droprate": 0.08
+          },
+          {
+            "id": 46999,
+            "droprate": 0
+          },
+          {
+            "id": 47057,
+            "droprate": 0
+          },
+          {
+            "id": 47052,
+            "droprate": 0.071
+          },
+          {
+            "id": 46997,
+            "droprate": 0.07400000000000001
+          },
+          {
+            "id": 47242,
+            "droprate": 0.783
+          },
+          {
+            "id": 47043,
+            "droprate": 0
+          },
+          {
+            "id": 47223,
+            "droprate": 0
+          },
+          {
+            "id": 47041,
+            "droprate": 0.087
+          },
+          {
+            "id": 47053,
+            "droprate": 0.09699999999999999
+          },
+          {
+            "id": 46996,
+            "droprate": 0.067
+          },
+          {
+            "id": 46994,
+            "droprate": 0.07400000000000001
+          }
+        ],
+        "RAID25H_DIFF": [
+          {
+            "id": 47436,
+            "droprate": 0.076
+          },
+          {
+            "id": 47435,
+            "droprate": 0.087
+          },
+          {
+            "id": 47431,
+            "droprate": 0.094
+          },
+          {
+            "id": 47438,
+            "droprate": 0.098
+          },
+          {
+            "id": 47441,
+            "droprate": 0.073
+          },
+          {
+            "id": 47429,
+            "droprate": 0.073
+          },
+          {
+            "id": 47440,
+            "droprate": 0.07200000000000001
+          },
+          {
+            "id": 47434,
+            "droprate": 0.077
+          },
+          {
+            "id": 47430,
+            "droprate": 0.098
+          },
+          {
+            "id": 47242,
+            "droprate": 0.783
+          },
+          {
+            "id": 47433,
+            "droprate": 0.083
+          },
+          {
+            "id": 47439,
+            "droprate": 0.092
+          },
+          {
+            "id": 47432,
+            "droprate": 0.109
+          },
+          {
+            "id": 47437,
+            "droprate": 0.09
+          },
+          {
+            "id": 47427,
+            "droprate": 0.066
+          },
+          {
+            "id": 47428,
+            "droprate": 0.083
+          },
+          {
+            "id": 47063,
+            "droprate": 0.079
+          },
+          {
+            "id": 47062,
+            "droprate": 0.069
+          },
+          {
+            "id": 47004,
+            "droprate": 0.079
+          },
+          {
+            "id": 47066,
+            "droprate": 0.063
+          },
+          {
+            "id": 47068,
+            "droprate": 0.066
+          },
+          {
+            "id": 47002,
+            "droprate": 0.068
+          },
+          {
+            "id": 47067,
+            "droprate": 0.07400000000000001
+          },
+          {
+            "id": 47061,
+            "droprate": 0.063
+          },
+          {
+            "id": 47003,
+            "droprate": 0
+          },
+          {
+            "id": 47242,
+            "droprate": 0.783
+          },
+          {
+            "id": 47060,
+            "droprate": 0.076
+          },
+          {
+            "id": 47224,
+            "droprate": 0.068
+          },
+          {
+            "id": 47059,
+            "droprate": 0.068
+          },
+          {
+            "id": 47064,
+            "droprate": 0.083
+          },
+          {
+            "id": 47001,
+            "droprate": 0.076
+          },
+          {
+            "id": 46995,
+            "droprate": 0.08
+          }
+        ]
       },
       {
         "name": "Faction Champions",
+        "npcId": [
+          34461
+        ],
         "objectId": [],
-        "RAID10_DIFF": [],
-        "RAID10H_DIFF": [],
-        "RAID25_DIFF": [],
-        "RAID25H_DIFF": []
+        "RAID10_DIFF": [
+          {
+            "id": 47873,
+            "droprate": 0.08900000000000001
+          },
+          {
+            "id": 47878,
+            "droprate": 0.07
+          },
+          {
+            "id": 47875,
+            "droprate": 0.102
+          },
+          {
+            "id": 47876,
+            "droprate": 0.057999999999999996
+          },
+          {
+            "id": 47877,
+            "droprate": 0.08900000000000001
+          },
+          {
+            "id": 47880,
+            "droprate": 0.102
+          },
+          {
+            "id": 47882,
+            "droprate": 0.12
+          },
+          {
+            "id": 47879,
+            "droprate": 0.125
+          },
+          {
+            "id": 47881,
+            "droprate": 0.111
+          },
+          {
+            "id": 47874,
+            "droprate": 0.076
+          },
+          {
+            "id": 47721,
+            "droprate": 0.055
+          },
+          {
+            "id": 47719,
+            "droprate": 0.067
+          },
+          {
+            "id": 47718,
+            "droprate": 0.068
+          },
+          {
+            "id": 47717,
+            "droprate": 0.06
+          },
+          {
+            "id": 47720,
+            "droprate": 0.052000000000000005
+          },
+          {
+            "id": 47728,
+            "droprate": 0.092
+          },
+          {
+            "id": 47727,
+            "droprate": 0.087
+          },
+          {
+            "id": 47726,
+            "droprate": 0.11199999999999999
+          },
+          {
+            "id": 47725,
+            "droprate": 0.076
+          },
+          {
+            "id": 47724,
+            "droprate": 0.067
+          }
+        ],
+        "RAID10H_DIFF": [
+          {
+            "id": 48012,
+            "droprate": 0.062000000000000006
+          },
+          {
+            "id": 48017,
+            "droprate": 0.040999999999999995
+          },
+          {
+            "id": 48014,
+            "droprate": 0.055999999999999994
+          },
+          {
+            "id": 48015,
+            "droprate": 0.044000000000000004
+          },
+          {
+            "id": 48016,
+            "droprate": 0.07200000000000001
+          },
+          {
+            "id": 48019,
+            "droprate": 0.062000000000000006
+          },
+          {
+            "id": 48021,
+            "droprate": 0.086
+          },
+          {
+            "id": 48018,
+            "droprate": 0.1
+          },
+          {
+            "id": 48020,
+            "droprate": 0.073
+          },
+          {
+            "id": 48013,
+            "droprate": 0.04
+          },
+          {
+            "id": 47940,
+            "droprate": 0.07
+          },
+          {
+            "id": 47945,
+            "droprate": 0.061
+          },
+          {
+            "id": 47942,
+            "droprate": 0.068
+          },
+          {
+            "id": 47943,
+            "droprate": 0.055
+          },
+          {
+            "id": 47944,
+            "droprate": 0.057999999999999996
+          },
+          {
+            "id": 47947,
+            "droprate": 0.083
+          },
+          {
+            "id": 47949,
+            "droprate": 0.083
+          },
+          {
+            "id": 47946,
+            "droprate": 0.11599999999999999
+          },
+          {
+            "id": 47948,
+            "droprate": 0.12
+          },
+          {
+            "id": 47941,
+            "droprate": 0.081
+          }
+        ],
+        "RAID25_DIFF": [
+          {
+            "id": 47291,
+            "droprate": 0.102
+          },
+          {
+            "id": 47286,
+            "droprate": 0.064
+          },
+          {
+            "id": 47293,
+            "droprate": 0.081
+          },
+          {
+            "id": 47292,
+            "droprate": 0.069
+          },
+          {
+            "id": 47284,
+            "droprate": 0
+          },
+          {
+            "id": 47281,
+            "droprate": 0.064
+          },
+          {
+            "id": 47289,
+            "droprate": 0.066
+          },
+          {
+            "id": 47295,
+            "droprate": 0
+          },
+          {
+            "id": 47288,
+            "droprate": 0.145
+          },
+          {
+            "id": 47294,
+            "droprate": 0.08900000000000001
+          },
+          {
+            "id": 47283,
+            "droprate": 0.11199999999999999
+          },
+          {
+            "id": 47242,
+            "droprate": 0.551
+          },
+          {
+            "id": 47282,
+            "droprate": 0
+          },
+          {
+            "id": 47290,
+            "droprate": 0.069
+          },
+          {
+            "id": 47285,
+            "droprate": 0.092
+          },
+          {
+            "id": 47287,
+            "droprate": 0
+          },
+          {
+            "id": 47089,
+            "droprate": 0
+          },
+          {
+            "id": 47081,
+            "droprate": 0.08900000000000001
+          },
+          {
+            "id": 47092,
+            "droprate": 0
+          },
+          {
+            "id": 47094,
+            "droprate": 0
+          },
+          {
+            "id": 47071,
+            "droprate": 0.064
+          },
+          {
+            "id": 47073,
+            "droprate": 0.069
+          },
+          {
+            "id": 47083,
+            "droprate": 0
+          },
+          {
+            "id": 47090,
+            "droprate": 0.071
+          },
+          {
+            "id": 47082,
+            "droprate": 0
+          },
+          {
+            "id": 47093,
+            "droprate": 0
+          },
+          {
+            "id": 47072,
+            "droprate": 0
+          },
+          {
+            "id": 47242,
+            "droprate": 0.551
+          },
+          {
+            "id": 47070,
+            "droprate": 0
+          },
+          {
+            "id": 47080,
+            "droprate": 0.071
+          },
+          {
+            "id": 47069,
+            "droprate": 0
+          },
+          {
+            "id": 47079,
+            "droprate": 0
+          }
+        ],
+        "RAID25H_DIFF": [
+          {
+            "id": 47452,
+            "droprate": 0.051
+          },
+          {
+            "id": 47447,
+            "droprate": 0.071
+          },
+          {
+            "id": 47454,
+            "droprate": 0.084
+          },
+          {
+            "id": 47453,
+            "droprate": 0.066
+          },
+          {
+            "id": 47445,
+            "droprate": 0.042
+          },
+          {
+            "id": 47442,
+            "droprate": 0.036000000000000004
+          },
+          {
+            "id": 47450,
+            "droprate": 0.036000000000000004
+          },
+          {
+            "id": 47456,
+            "droprate": 0.049
+          },
+          {
+            "id": 47449,
+            "droprate": 0.053
+          },
+          {
+            "id": 47455,
+            "droprate": 0
+          },
+          {
+            "id": 47444,
+            "droprate": 0.049
+          },
+          {
+            "id": 47242,
+            "droprate": 0.551
+          },
+          {
+            "id": 47443,
+            "droprate": 0.042
+          },
+          {
+            "id": 47451,
+            "droprate": 0.047
+          },
+          {
+            "id": 47446,
+            "droprate": 0.047
+          },
+          {
+            "id": 47448,
+            "droprate": 0.073
+          },
+          {
+            "id": 47095,
+            "droprate": 0.084
+          },
+          {
+            "id": 47084,
+            "droprate": 0.053
+          },
+          {
+            "id": 47097,
+            "droprate": 0.043
+          },
+          {
+            "id": 47096,
+            "droprate": 0
+          },
+          {
+            "id": 47077,
+            "droprate": 0.038
+          },
+          {
+            "id": 47074,
+            "droprate": 0
+          },
+          {
+            "id": 47087,
+            "droprate": 0.04
+          },
+          {
+            "id": 47099,
+            "droprate": 0.044000000000000004
+          },
+          {
+            "id": 47086,
+            "droprate": 0.047
+          },
+          {
+            "id": 47098,
+            "droprate": 0.076
+          },
+          {
+            "id": 47076,
+            "droprate": 0.042
+          },
+          {
+            "id": 47242,
+            "droprate": 0.551
+          },
+          {
+            "id": 47075,
+            "droprate": 0
+          },
+          {
+            "id": 47088,
+            "droprate": 0
+          },
+          {
+            "id": 47078,
+            "droprate": 0.073
+          },
+          {
+            "id": 47085,
+            "droprate": 0.073
+          }
+        ]
       },
       {
         "name": "The Twin Val'kyr",
+        "npcId": [
+          34496,
+          34497
+        ],
         "objectId": [],
-        "RAID10_DIFF": [],
-        "RAID10H_DIFF": [],
-        "RAID25_DIFF": [],
-        "RAID25H_DIFF": []
+        "RAID10_DIFF": [
+          {
+            "id": 47889,
+            "droprate": 0.06
+          },
+          {
+            "id": 49232,
+            "droprate": 0.062000000000000006
+          },
+          {
+            "id": 47891,
+            "droprate": 0.065
+          },
+          {
+            "id": 47887,
+            "droprate": 0.094
+          },
+          {
+            "id": 47893,
+            "droprate": 0.085
+          },
+          {
+            "id": 47885,
+            "droprate": 0.055999999999999994
+          },
+          {
+            "id": 47890,
+            "droprate": 0.069
+          },
+          {
+            "id": 47888,
+            "droprate": 0.077
+          },
+          {
+            "id": 47913,
+            "droprate": 0.055999999999999994
+          },
+          {
+            "id": 47886,
+            "droprate": 0.064
+          },
+          {
+            "id": 47884,
+            "droprate": 0.08800000000000001
+          },
+          {
+            "id": 47892,
+            "droprate": 0.051
+          },
+          {
+            "id": 47883,
+            "droprate": 0.067
+          },
+          {
+            "id": 47745,
+            "droprate": 0.073
+          },
+          {
+            "id": 49231,
+            "droprate": 0.062000000000000006
+          },
+          {
+            "id": 47746,
+            "droprate": 0.071
+          },
+          {
+            "id": 47739,
+            "droprate": 0.07
+          },
+          {
+            "id": 47744,
+            "droprate": 0.053
+          },
+          {
+            "id": 47738,
+            "droprate": 0.064
+          },
+          {
+            "id": 47747,
+            "droprate": 0.049
+          },
+          {
+            "id": 47700,
+            "droprate": 0.08900000000000001
+          },
+          {
+            "id": 47742,
+            "droprate": 0.052000000000000005
+          },
+          {
+            "id": 47736,
+            "droprate": 0.08
+          },
+          {
+            "id": 47737,
+            "droprate": 0.065
+          },
+          {
+            "id": 47743,
+            "droprate": 0.057
+          },
+          {
+            "id": 47740,
+            "droprate": 0.066
+          }
+        ],
+        "RAID10H_DIFF": [
+          {
+            "id": 48028,
+            "droprate": 0.053
+          },
+          {
+            "id": 49233,
+            "droprate": 0.05
+          },
+          {
+            "id": 48034,
+            "droprate": 0.057999999999999996
+          },
+          {
+            "id": 48026,
+            "droprate": 0.049
+          },
+          {
+            "id": 48038,
+            "droprate": 0.069
+          },
+          {
+            "id": 48024,
+            "droprate": 0.073
+          },
+          {
+            "id": 48030,
+            "droprate": 0.065
+          },
+          {
+            "id": 48027,
+            "droprate": 0.053
+          },
+          {
+            "id": 48032,
+            "droprate": 0.061
+          },
+          {
+            "id": 48025,
+            "droprate": 0.085
+          },
+          {
+            "id": 48023,
+            "droprate": 0.057999999999999996
+          },
+          {
+            "id": 48036,
+            "droprate": 0.053
+          },
+          {
+            "id": 48022,
+            "droprate": 0.071
+          },
+          {
+            "id": 47956,
+            "droprate": 0.063
+          },
+          {
+            "id": 49234,
+            "droprate": 0.055
+          },
+          {
+            "id": 47959,
+            "droprate": 0.078
+          },
+          {
+            "id": 47954,
+            "droprate": 0.076
+          },
+          {
+            "id": 47961,
+            "droprate": 0.087
+          },
+          {
+            "id": 47952,
+            "droprate": 0.073
+          },
+          {
+            "id": 47957,
+            "droprate": 0.073
+          },
+          {
+            "id": 47955,
+            "droprate": 0.081
+          },
+          {
+            "id": 47958,
+            "droprate": 0.066
+          },
+          {
+            "id": 47953,
+            "droprate": 0.08900000000000001
+          },
+          {
+            "id": 47951,
+            "droprate": 0.079
+          },
+          {
+            "id": 47960,
+            "droprate": 0.055
+          },
+          {
+            "id": 47950,
+            "droprate": 0.10099999999999999
+          }
+        ],
+        "RAID25_DIFF": [
+          {
+            "id": 47301,
+            "droprate": 0.11699999999999999
+          },
+          {
+            "id": 47306,
+            "droprate": 0.168
+          },
+          {
+            "id": 47308,
+            "droprate": 0.07400000000000001
+          },
+          {
+            "id": 47299,
+            "droprate": 0.10300000000000001
+          },
+          {
+            "id": 47296,
+            "droprate": 0.106
+          },
+          {
+            "id": 47310,
+            "droprate": 0.109
+          },
+          {
+            "id": 47298,
+            "droprate": 0.075
+          },
+          {
+            "id": 47304,
+            "droprate": 0.078
+          },
+          {
+            "id": 47307,
+            "droprate": 0.069
+          },
+          {
+            "id": 47305,
+            "droprate": 0.095
+          },
+          {
+            "id": 47297,
+            "droprate": 0.095
+          },
+          {
+            "id": 47303,
+            "droprate": 0.098
+          },
+          {
+            "id": 47309,
+            "droprate": 0.08199999999999999
+          },
+          {
+            "id": 47242,
+            "droprate": 0.792
+          },
+          {
+            "id": 47300,
+            "droprate": 0.067
+          },
+          {
+            "id": 47302,
+            "droprate": 0.092
+          },
+          {
+            "id": 47126,
+            "droprate": 0
+          },
+          {
+            "id": 47141,
+            "droprate": 0.141
+          },
+          {
+            "id": 47107,
+            "droprate": 0.084
+          },
+          {
+            "id": 47140,
+            "droprate": 0.053
+          },
+          {
+            "id": 47106,
+            "droprate": 0.078
+          },
+          {
+            "id": 47142,
+            "droprate": 0.066
+          },
+          {
+            "id": 47108,
+            "droprate": 0.087
+          },
+          {
+            "id": 47121,
+            "droprate": 0.081
+          },
+          {
+            "id": 47116,
+            "droprate": 0
+          },
+          {
+            "id": 47105,
+            "droprate": 0
+          },
+          {
+            "id": 47139,
+            "droprate": 0.045
+          },
+          {
+            "id": 47115,
+            "droprate": 0
+          },
+          {
+            "id": 47138,
+            "droprate": 0.066
+          },
+          {
+            "id": 47242,
+            "droprate": 0.792
+          },
+          {
+            "id": 47104,
+            "droprate": 0
+          },
+          {
+            "id": 47114,
+            "droprate": 0.087
+          }
+        ],
+        "RAID25H_DIFF": [
+          {
+            "id": 47462,
+            "droprate": 0.08800000000000001
+          },
+          {
+            "id": 47467,
+            "droprate": 0.067
+          },
+          {
+            "id": 47469,
+            "droprate": 0.063
+          },
+          {
+            "id": 47460,
+            "droprate": 0.086
+          },
+          {
+            "id": 47457,
+            "droprate": 0.076
+          },
+          {
+            "id": 47471,
+            "droprate": 0.08199999999999999
+          },
+          {
+            "id": 47459,
+            "droprate": 0.063
+          },
+          {
+            "id": 47465,
+            "droprate": 0.065
+          },
+          {
+            "id": 47468,
+            "droprate": 0.11699999999999999
+          },
+          {
+            "id": 47466,
+            "droprate": 0.055999999999999994
+          },
+          {
+            "id": 47458,
+            "droprate": 0.11199999999999999
+          },
+          {
+            "id": 47464,
+            "droprate": 0.1
+          },
+          {
+            "id": 47470,
+            "droprate": 0.08
+          },
+          {
+            "id": 47242,
+            "droprate": 0.792
+          },
+          {
+            "id": 47461,
+            "droprate": 0.057999999999999996
+          },
+          {
+            "id": 47463,
+            "droprate": 0.107
+          },
+          {
+            "id": 47129,
+            "droprate": 0.083
+          },
+          {
+            "id": 47143,
+            "droprate": 0.08900000000000001
+          },
+          {
+            "id": 47112,
+            "droprate": 0.086
+          },
+          {
+            "id": 47145,
+            "droprate": 0.063
+          },
+          {
+            "id": 47109,
+            "droprate": 0.081
+          },
+          {
+            "id": 47147,
+            "droprate": 0.071
+          },
+          {
+            "id": 47111,
+            "droprate": 0.08800000000000001
+          },
+          {
+            "id": 47132,
+            "droprate": 0.07
+          },
+          {
+            "id": 47133,
+            "droprate": 0.06
+          },
+          {
+            "id": 47110,
+            "droprate": 0
+          },
+          {
+            "id": 47144,
+            "droprate": 0.102
+          },
+          {
+            "id": 47131,
+            "droprate": 0.09
+          },
+          {
+            "id": 47146,
+            "droprate": 0.052000000000000005
+          },
+          {
+            "id": 47242,
+            "droprate": 0.792
+          },
+          {
+            "id": 47113,
+            "droprate": 0.086
+          },
+          {
+            "id": 47130,
+            "droprate": 0.069
+          }
+        ]
       },
       {
         "name": "Anub'arak",
+        "npcId": [
+          34564
+        ],
         "objectId": [],
-        "RAID10_DIFF": [],
-        "RAID10H_DIFF": [],
-        "RAID25_DIFF": [],
-        "RAID25H_DIFF": []
+        "fromWotlkDb": true,
+        "RAID10_DIFF": [
+          {
+            "id": 47906,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47909,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47904,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47897,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47901,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47896,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47902,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47908,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47899,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47903,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47898,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47894,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47905,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47911,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47900,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47910,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47895,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47907,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47838,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47837,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47832,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47813,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47829,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47811,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47836,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47830,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47810,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47814,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47808,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47809,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47816,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47834,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47815,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47835,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47812,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47741,
+            "droprate": 0.05556
+          }
+        ],
+        "RAID10H_DIFF": [
+          {
+            "id": 48051,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48054,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48049,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48042,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48046,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48041,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48047,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48053,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48044,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48048,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48043,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48039,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48050,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48056,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48045,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48055,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48040,
+            "droprate": 0.05556
+          },
+          {
+            "id": 48052,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47974,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47977,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47972,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47965,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47969,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47964,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47976,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47970,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47967,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47971,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47966,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47962,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47973,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47979,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47968,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47978,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47963,
+            "droprate": 0.05556
+          },
+          {
+            "id": 47975,
+            "droprate": 0.05556
+          }
+        ],
+        "RAID25_DIFF": [
+          {
+            "id": 47328,
+            "droprate": 0.05
+          },
+          {
+            "id": 47320,
+            "droprate": 0.05
+          },
+          {
+            "id": 47324,
+            "droprate": 0.05
+          },
+          {
+            "id": 47326,
+            "droprate": 0.05
+          },
+          {
+            "id": 47317,
+            "droprate": 0.05
+          },
+          {
+            "id": 47321,
+            "droprate": 0.05
+          },
+          {
+            "id": 47313,
+            "droprate": 0.05
+          },
+          {
+            "id": 47318,
+            "droprate": 0.05
+          },
+          {
+            "id": 47325,
+            "droprate": 0.05
+          },
+          {
+            "id": 47311,
+            "droprate": 0.05
+          },
+          {
+            "id": 47319,
+            "droprate": 0.05
+          },
+          {
+            "id": 47330,
+            "droprate": 0.05
+          },
+          {
+            "id": 47323,
+            "droprate": 0.05
+          },
+          {
+            "id": 47312,
+            "droprate": 0.05
+          },
+          {
+            "id": 47242,
+            "droprate": 1
+          },
+          {
+            "id": 47315,
+            "droprate": 0.05
+          },
+          {
+            "id": 47327,
+            "droprate": 0.05
+          },
+          {
+            "id": 47316,
+            "droprate": 0.05
+          },
+          {
+            "id": 47314,
+            "droprate": 0.05
+          },
+          {
+            "id": 47322,
+            "droprate": 0.05
+          },
+          {
+            "id": 47329,
+            "droprate": 0.05
+          },
+          {
+            "id": 47225,
+            "droprate": 0.05
+          },
+          {
+            "id": 47183,
+            "droprate": 0.05
+          },
+          {
+            "id": 47203,
+            "droprate": 0.05
+          },
+          {
+            "id": 47235,
+            "droprate": 0.05
+          },
+          {
+            "id": 47187,
+            "droprate": 0.05
+          },
+          {
+            "id": 47194,
+            "droprate": 0.05
+          },
+          {
+            "id": 47151,
+            "droprate": 0.05
+          },
+          {
+            "id": 47186,
+            "droprate": 0.05
+          },
+          {
+            "id": 47204,
+            "droprate": 0.05
+          },
+          {
+            "id": 47152,
+            "droprate": 0.05
+          },
+          {
+            "id": 47184,
+            "droprate": 0.05
+          },
+          {
+            "id": 47234,
+            "droprate": 0.05
+          },
+          {
+            "id": 47195,
+            "droprate": 0.05
+          },
+          {
+            "id": 47150,
+            "droprate": 0.05
+          },
+          {
+            "id": 47242,
+            "droprate": 1
+          },
+          {
+            "id": 47054,
+            "droprate": 0.05
+          },
+          {
+            "id": 47149,
+            "droprate": 0.05
+          },
+          {
+            "id": 47182,
+            "droprate": 0.05
+          },
+          {
+            "id": 47148,
+            "droprate": 0.05
+          },
+          {
+            "id": 47193,
+            "droprate": 0.05
+          },
+          {
+            "id": 47233,
+            "droprate": 0.05
+          }
+        ],
+        "RAID25H_DIFF": [
+          {
+            "id": 47490,
+            "droprate": 0.05
+          },
+          {
+            "id": 47481,
+            "droprate": 0.05
+          },
+          {
+            "id": 47485,
+            "droprate": 0.05
+          },
+          {
+            "id": 47487,
+            "droprate": 0.05
+          },
+          {
+            "id": 47478,
+            "droprate": 0.05
+          },
+          {
+            "id": 47482,
+            "droprate": 0.05
+          },
+          {
+            "id": 47474,
+            "droprate": 0.05
+          },
+          {
+            "id": 47479,
+            "droprate": 0.05
+          },
+          {
+            "id": 47486,
+            "droprate": 0.05
+          },
+          {
+            "id": 47472,
+            "droprate": 0.05
+          },
+          {
+            "id": 47480,
+            "droprate": 0.05
+          },
+          {
+            "id": 47492,
+            "droprate": 0.05
+          },
+          {
+            "id": 47484,
+            "droprate": 0.05
+          },
+          {
+            "id": 47473,
+            "droprate": 0.05
+          },
+          {
+            "id": 47242,
+            "droprate": 1
+          },
+          {
+            "id": 47476,
+            "droprate": 0.05
+          },
+          {
+            "id": 47489,
+            "droprate": 0.05
+          },
+          {
+            "id": 47477,
+            "droprate": 0.05
+          },
+          {
+            "id": 47475,
+            "droprate": 0.05
+          },
+          {
+            "id": 47483,
+            "droprate": 0.05
+          },
+          {
+            "id": 47491,
+            "droprate": 0.05
+          },
+          {
+            "id": 47238,
+            "droprate": 0.05
+          },
+          {
+            "id": 47192,
+            "droprate": 0.05
+          },
+          {
+            "id": 47208,
+            "droprate": 0.05
+          },
+          {
+            "id": 47236,
+            "droprate": 0.05
+          },
+          {
+            "id": 47189,
+            "droprate": 0.05
+          },
+          {
+            "id": 47205,
+            "droprate": 0.05
+          },
+          {
+            "id": 47155,
+            "droprate": 0.05
+          },
+          {
+            "id": 47190,
+            "droprate": 0.05
+          },
+          {
+            "id": 47209,
+            "droprate": 0.05
+          },
+          {
+            "id": 47153,
+            "droprate": 0.05
+          },
+          {
+            "id": 47191,
+            "droprate": 0.05
+          },
+          {
+            "id": 47240,
+            "droprate": 0.05
+          },
+          {
+            "id": 47207,
+            "droprate": 0.05
+          },
+          {
+            "id": 47154,
+            "droprate": 0.05
+          },
+          {
+            "id": 47242,
+            "droprate": 1
+          },
+          {
+            "id": 47237,
+            "droprate": 0.05
+          },
+          {
+            "id": 47157,
+            "droprate": 0.05
+          },
+          {
+            "id": 47188,
+            "droprate": 0.05
+          },
+          {
+            "id": 47156,
+            "droprate": 0.05
+          },
+          {
+            "id": 47206,
+            "droprate": 0.05
+          },
+          {
+            "id": 47239,
+            "droprate": 0.05
+          }
+        ]
       },
       {
-        "name": "format(Argent Crusade Tribute Chest)",
-        "objectId": [],
-        "RAID10H_DIFF": [],
-        "RAID25H_DIFF": []
+        "name": "Argent Crusade Tribute Chest",
+        "objectId": [
+          195665,
+          195666,
+          195669,
+          195670
+        ],
+        "fromWotlkDb": true,
+        "RAID10H_DIFF": [
+          {
+            "id": 47556,
+            "droprate": 1
+          },
+          {
+            "id": 48703,
+            "droprate": 0.14286
+          },
+          {
+            "id": 48699,
+            "droprate": 0.14286
+          },
+          {
+            "id": 48693,
+            "droprate": 0.14286
+          },
+          {
+            "id": 48701,
+            "droprate": 0.14286
+          },
+          {
+            "id": 48697,
+            "droprate": 0.14286
+          },
+          {
+            "id": 48705,
+            "droprate": 0.14286
+          },
+          {
+            "id": 48695,
+            "droprate": 0.14286
+          },
+          {
+            "id": 49046,
+            "droprate": 1
+          },
+          {
+            "id": 48669,
+            "droprate": 0.2
+          },
+          {
+            "id": 48668,
+            "droprate": 0.2
+          },
+          {
+            "id": 48670,
+            "droprate": 0.2
+          },
+          {
+            "id": 48666,
+            "droprate": 0.2
+          },
+          {
+            "id": 48667,
+            "droprate": 0.2
+          },
+          {
+            "id": 48712,
+            "droprate": 0.14286
+          },
+          {
+            "id": 48714,
+            "droprate": 0.14286
+          },
+          {
+            "id": 48709,
+            "droprate": 0.14286
+          },
+          {
+            "id": 48708,
+            "droprate": 0.14286
+          },
+          {
+            "id": 48711,
+            "droprate": 0.14286
+          },
+          {
+            "id": 48710,
+            "droprate": 0.14286
+          },
+          {
+            "id": 48713,
+            "droprate": 0.14286
+          },
+          {
+            "id": 49044,
+            "droprate": 1
+          },
+          {
+            "id": 48674,
+            "droprate": 0.2
+          },
+          {
+            "id": 48673,
+            "droprate": 0.2
+          },
+          {
+            "id": 48675,
+            "droprate": 0.2
+          },
+          {
+            "id": 48671,
+            "droprate": 0.2
+          },
+          {
+            "id": 48672,
+            "droprate": 0.2
+          }
+        ],
+        "RAID25H_DIFF": [
+          {
+            "id": 47557,
+            "droprate": 0.33333
+          },
+          {
+            "id": 47558,
+            "droprate": 0.33333
+          },
+          {
+            "id": 47559,
+            "droprate": 0.33333
+          },
+          {
+            "id": 47513,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47528,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47518,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47520,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47523,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47525,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47516,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47557,
+            "droprate": 0.33333
+          },
+          {
+            "id": 47558,
+            "droprate": 0.33333
+          },
+          {
+            "id": 47559,
+            "droprate": 0.33333
+          },
+          {
+            "id": 47548,
+            "droprate": 0.2
+          },
+          {
+            "id": 47546,
+            "droprate": 0.2
+          },
+          {
+            "id": 47550,
+            "droprate": 0.2
+          },
+          {
+            "id": 49098,
+            "droprate": 0
+          },
+          {
+            "id": 47551,
+            "droprate": 0.2
+          },
+          {
+            "id": 47554,
+            "droprate": 0.2
+          },
+          {
+            "id": 47557,
+            "droprate": 0.33333
+          },
+          {
+            "id": 47558,
+            "droprate": 0.33333
+          },
+          {
+            "id": 47559,
+            "droprate": 0.33333
+          },
+          {
+            "id": 47506,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47526,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47517,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47519,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47521,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47524,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47515,
+            "droprate": 0.14286
+          },
+          {
+            "id": 47557,
+            "droprate": 0.33333
+          },
+          {
+            "id": 47558,
+            "droprate": 0.33333
+          },
+          {
+            "id": 47559,
+            "droprate": 0.33333
+          },
+          {
+            "id": 47547,
+            "droprate": 0.2
+          },
+          {
+            "id": 47545,
+            "droprate": 0.2
+          },
+          {
+            "id": 47549,
+            "droprate": 0.2
+          },
+          {
+            "id": 49096,
+            "droprate": 0
+          },
+          {
+            "id": 47552,
+            "droprate": 0.2
+          },
+          {
+            "id": 47553,
+            "droprate": 0.2
+          }
+        ]
       },
       {
         "name": "Patterns",
         "objectId": [],
-        "NORMAL_DIFF": []
+        "NORMAL_DIFF": [
+          {
+            "id": 47640,
+            "droprate": 0
+          },
+          {
+            "id": 47641,
+            "droprate": 0
+          },
+          {
+            "id": 47642,
+            "droprate": 0
+          },
+          {
+            "id": 47643,
+            "droprate": 0
+          },
+          {
+            "id": 47644,
+            "droprate": 0
+          },
+          {
+            "id": 47645,
+            "droprate": 0
+          },
+          {
+            "id": 47646,
+            "droprate": 0
+          },
+          {
+            "id": 47647,
+            "droprate": 0
+          },
+          {
+            "id": 47648,
+            "droprate": 0
+          },
+          {
+            "id": 47649,
+            "droprate": 0
+          },
+          {
+            "id": 47650,
+            "droprate": 0
+          },
+          {
+            "id": 47651,
+            "droprate": 0
+          },
+          {
+            "id": 47652,
+            "droprate": 0
+          },
+          {
+            "id": 47653,
+            "droprate": 0
+          },
+          {
+            "id": 47639,
+            "droprate": 0
+          },
+          {
+            "id": 47638,
+            "droprate": 0
+          },
+          {
+            "id": 47637,
+            "droprate": 0
+          },
+          {
+            "id": 47636,
+            "droprate": 0
+          },
+          {
+            "id": 47622,
+            "droprate": 0
+          },
+          {
+            "id": 47623,
+            "droprate": 0
+          },
+          {
+            "id": 47627,
+            "droprate": 0
+          },
+          {
+            "id": 47626,
+            "droprate": 0
+          },
+          {
+            "id": 47624,
+            "droprate": 0
+          },
+          {
+            "id": 47625,
+            "droprate": 0
+          },
+          {
+            "id": 47629,
+            "droprate": 0
+          },
+          {
+            "id": 47635,
+            "droprate": 0
+          },
+          {
+            "id": 47631,
+            "droprate": 0
+          },
+          {
+            "id": 47630,
+            "droprate": 0
+          },
+          {
+            "id": 47628,
+            "droprate": 0
+          },
+          {
+            "id": 47634,
+            "droprate": 0
+          },
+          {
+            "id": 47632,
+            "droprate": 0
+          },
+          {
+            "id": 47633,
+            "droprate": 0
+          },
+          {
+            "id": 47654,
+            "droprate": 0
+          },
+          {
+            "id": 47655,
+            "droprate": 0
+          },
+          {
+            "id": 47656,
+            "droprate": 0
+          },
+          {
+            "id": 47657,
+            "droprate": 0
+          }
+        ]
       }
     ]
   },
   {
-    "name": "WrathOnyxiasLair",
+    "name": "Onyxia's Lair",
     "id": 2159,
     "contentType": "RAID_CONTENT",
     "sources": [
       {
         "name": "Onyxia",
         "npcId": [
-          15956
+          10184
         ],
         "objectId": [],
+        "fromWotlkDb": true,
         "RAID10_DIFF": [
           {
             "id": 49307,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49304,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49437,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49298,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49303,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49296,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49299,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49297,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49302,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49301,
@@ -9008,81 +11938,81 @@
           },
           {
             "id": 49305,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49308,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49306,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49309,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49636,
-            "droprate": 0
+            "droprate": 0.02
           },
           {
             "id": 49463,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49310,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49644,
-            "droprate": 0
+            "droprate": 1
           },
           {
             "id": 49295,
-            "droprate": 0
+            "droprate": 1
           },
           {
             "id": 49294,
-            "droprate": 0
+            "droprate": 1
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 49491,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49494,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49465,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49499,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49495,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49501,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49498,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49500,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49496,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49497,
@@ -9090,2902 +12020,2941 @@
           },
           {
             "id": 49493,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49490,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49492,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49489,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49636,
-            "droprate": 0
+            "droprate": 0.02
           },
           {
             "id": 49464,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49488,
-            "droprate": 0
+            "droprate": 0.02941
           },
           {
             "id": 49644,
-            "droprate": 0
+            "droprate": 1
           },
           {
             "id": 49295,
-            "droprate": 0
+            "droprate": 1
           },
           {
             "id": 49294,
-            "droprate": 0
+            "droprate": 1
           }
         ]
       }
     ]
   },
   {
-    "name": "IcecrownCitadel",
+    "name": "Icecrown Citadel",
     "id": 4812,
     "contentType": "RAID_CONTENT",
     "sources": [
       {
         "name": "Lord Marrowgar",
+        "npcId": [
+          36612
+        ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 50764,
-            "droprate": 0
+            "droprate": 0.184
           },
           {
             "id": 50773,
-            "droprate": 0
+            "droprate": 0.127
           },
           {
             "id": 50774,
-            "droprate": 0
+            "droprate": 0.11800000000000001
           },
           {
             "id": 50762,
-            "droprate": 0
+            "droprate": 0.131
           },
           {
             "id": 50775,
-            "droprate": 0
+            "droprate": 0.131
           },
           {
             "id": 50772,
-            "droprate": 0
+            "droprate": 0.134
           },
           {
             "id": 50763,
-            "droprate": 0
+            "droprate": 0.08900000000000001
           },
           {
             "id": 50339,
-            "droprate": 0
+            "droprate": 0.21100000000000002
           },
           {
             "id": 50771,
-            "droprate": 0
+            "droprate": 0.203
           },
           {
             "id": 50761,
-            "droprate": 0
+            "droprate": 0.267
           },
           {
             "id": 50759,
-            "droprate": 0
+            "droprate": 0.11599999999999999
           },
           {
             "id": 50760,
-            "droprate": 0
+            "droprate": 0.138
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 51933,
-            "droprate": 0
+            "droprate": 0.166
           },
           {
             "id": 51930,
-            "droprate": 0
+            "droprate": 0.133
           },
           {
             "id": 51929,
-            "droprate": 0
+            "droprate": 0.11699999999999999
           },
           {
             "id": 51935,
-            "droprate": 0
+            "droprate": 0.128
           },
           {
             "id": 51928,
-            "droprate": 0
+            "droprate": 0.11800000000000001
           },
           {
             "id": 51931,
-            "droprate": 0
+            "droprate": 0.13699999999999998
           },
           {
             "id": 51934,
-            "droprate": 0
+            "droprate": 0.098
           },
           {
             "id": 50346,
-            "droprate": 0
+            "droprate": 0.20199999999999999
           },
           {
             "id": 51932,
-            "droprate": 0
+            "droprate": 0.21100000000000002
           },
           {
             "id": 51936,
-            "droprate": 0
+            "droprate": 0.262
           },
           {
             "id": 51938,
-            "droprate": 0
+            "droprate": 0.12300000000000001
           },
           {
             "id": 51937,
-            "droprate": 0
+            "droprate": 0.135
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.182
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 49978,
-            "droprate": 0
+            "droprate": 0.198
           },
           {
             "id": 49979,
-            "droprate": 0
+            "droprate": 0.11199999999999999
           },
           {
             "id": 49950,
-            "droprate": 0
+            "droprate": 0.131
           },
           {
             "id": 49952,
-            "droprate": 0
+            "droprate": 0.13
           },
           {
             "id": 49980,
-            "droprate": 0
+            "droprate": 0.11599999999999999
           },
           {
             "id": 49951,
-            "droprate": 0
+            "droprate": 0.156
           },
           {
             "id": 49960,
-            "droprate": 0
+            "droprate": 0.161
           },
           {
             "id": 49964,
-            "droprate": 0
+            "droprate": 0.127
           },
           {
             "id": 49975,
-            "droprate": 0
+            "droprate": 0.188
           },
           {
             "id": 49949,
-            "droprate": 0
+            "droprate": 0.185
           },
           {
             "id": 49977,
-            "droprate": 0
+            "droprate": 0.269
           },
           {
             "id": 49967,
-            "droprate": 0
+            "droprate": 0.12
           },
           {
             "id": 49968,
-            "droprate": 0
+            "droprate": 0.29100000000000004
           },
           {
             "id": 50415,
-            "droprate": 0
+            "droprate": 0.278
           },
           {
             "id": 49976,
-            "droprate": 0
+            "droprate": 0.19399999999999998
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.35000000000000003
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.182
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 50613,
-            "droprate": 0
+            "droprate": 0.184
           },
           {
             "id": 50615,
-            "droprate": 0
+            "droprate": 0.122
           },
           {
             "id": 50607,
-            "droprate": 0
+            "droprate": 0.131
           },
           {
             "id": 50605,
-            "droprate": 0
+            "droprate": 0.13
           },
           {
             "id": 50617,
-            "droprate": 0
+            "droprate": 0.11
           },
           {
             "id": 50606,
-            "droprate": 0
+            "droprate": 0.136
           },
           {
             "id": 50611,
-            "droprate": 0
+            "droprate": 0.134
           },
           {
             "id": 50612,
-            "droprate": 0
+            "droprate": 0.114
           },
           {
             "id": 50609,
-            "droprate": 0
+            "droprate": 0.19899999999999998
           },
           {
             "id": 50604,
-            "droprate": 0
+            "droprate": 0.171
           },
           {
             "id": 50614,
-            "droprate": 0
+            "droprate": 0.225
           },
           {
             "id": 50610,
-            "droprate": 0
+            "droprate": 0.114
           },
           {
             "id": 50608,
-            "droprate": 0
+            "droprate": 0.269
           },
           {
             "id": 50709,
-            "droprate": 0
+            "droprate": 0.257
           },
           {
             "id": 50616,
-            "droprate": 0
+            "droprate": 0.19
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.35000000000000003
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.182
           }
         ]
       },
       {
         "name": "Lady Deathwhisper",
+        "npcId": [
+          36855
+        ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 50785,
-            "droprate": 0
+            "droprate": 0.127
           },
           {
             "id": 50782,
-            "droprate": 0
+            "droprate": 0.185
           },
           {
             "id": 50780,
-            "droprate": 0
+            "droprate": 0.142
           },
           {
             "id": 50778,
-            "droprate": 0
+            "droprate": 0.142
           },
           {
             "id": 50783,
-            "droprate": 0
+            "droprate": 0.126
           },
           {
             "id": 50777,
-            "droprate": 0
+            "droprate": 0.132
           },
           {
             "id": 50784,
-            "droprate": 0
+            "droprate": 0.14300000000000002
           },
           {
             "id": 50779,
-            "droprate": 0
+            "droprate": 0.132
           },
           {
             "id": 50786,
-            "droprate": 0
+            "droprate": 0.129
           },
           {
             "id": 50342,
-            "droprate": 0
+            "droprate": 0.18
           },
           {
             "id": 50776,
-            "droprate": 0
+            "droprate": 0.20500000000000002
           },
           {
             "id": 50781,
-            "droprate": 0
+            "droprate": 0.237
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 51918,
-            "droprate": 0
+            "droprate": 0.12300000000000001
           },
           {
             "id": 51921,
-            "droprate": 0
+            "droprate": 0.152
           },
           {
             "id": 51923,
-            "droprate": 0
+            "droprate": 0.11199999999999999
           },
           {
             "id": 51925,
-            "droprate": 0
+            "droprate": 0.132
           },
           {
             "id": 51920,
-            "droprate": 0
+            "droprate": 0.12300000000000001
           },
           {
             "id": 51926,
-            "droprate": 0
+            "droprate": 0.151
           },
           {
             "id": 51919,
-            "droprate": 0
+            "droprate": 0.11599999999999999
           },
           {
             "id": 51924,
-            "droprate": 0
+            "droprate": 0.145
           },
           {
             "id": 51917,
-            "droprate": 0
+            "droprate": 0.134
           },
           {
             "id": 50343,
-            "droprate": 0
+            "droprate": 0.177
           },
           {
             "id": 51927,
-            "droprate": 0
+            "droprate": 0.188
           },
           {
             "id": 51922,
-            "droprate": 0
+            "droprate": 0.266
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.165
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 49991,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 49994,
-            "droprate": 0
+            "droprate": 0.212
           },
           {
             "id": 49987,
-            "droprate": 0
+            "droprate": 0.20600000000000002
           },
           {
             "id": 49996,
-            "droprate": 0
+            "droprate": 0.131
           },
           {
             "id": 49988,
-            "droprate": 0
+            "droprate": 0.18100000000000002
           },
           {
             "id": 49993,
-            "droprate": 0
+            "droprate": 0.12300000000000001
           },
           {
             "id": 49986,
-            "droprate": 0
+            "droprate": 0.136
           },
           {
             "id": 49995,
-            "droprate": 0
+            "droprate": 0.147
           },
           {
             "id": 49983,
-            "droprate": 0
+            "droprate": 0.177
           },
           {
             "id": 49989,
-            "droprate": 0
+            "droprate": 0.184
           },
           {
             "id": 49985,
-            "droprate": 0
+            "droprate": 0.125
           },
           {
             "id": 49990,
-            "droprate": 0
+            "droprate": 0.168
           },
           {
             "id": 49982,
-            "droprate": 0
+            "droprate": 0.17500000000000002
           },
           {
             "id": 49992,
-            "droprate": 0
+            "droprate": 0.299
           },
           {
             "id": 50034,
-            "droprate": 0
+            "droprate": 0.27399999999999997
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.316
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.165
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 50643,
-            "droprate": 0
+            "droprate": 0.155
           },
           {
             "id": 50651,
-            "droprate": 0
+            "droprate": 0.154
           },
           {
             "id": 50646,
-            "droprate": 0
+            "droprate": 0.17
           },
           {
             "id": 50649,
-            "droprate": 0
+            "droprate": 0.114
           },
           {
             "id": 50645,
-            "droprate": 0
+            "droprate": 0.165
           },
           {
             "id": 50652,
-            "droprate": 0
+            "droprate": 0.115
           },
           {
             "id": 50640,
-            "droprate": 0
+            "droprate": 0.09
           },
           {
             "id": 50650,
-            "droprate": 0
+            "droprate": 0.127
           },
           {
             "id": 50639,
-            "droprate": 0
+            "droprate": 0.166
           },
           {
             "id": 50647,
-            "droprate": 0
+            "droprate": 0.163
           },
           {
             "id": 50642,
-            "droprate": 0
+            "droprate": 0.107
           },
           {
             "id": 50644,
-            "droprate": 0
+            "droprate": 0.154
           },
           {
             "id": 50641,
-            "droprate": 0
+            "droprate": 0.17500000000000002
           },
           {
             "id": 50648,
-            "droprate": 0
+            "droprate": 0.30100000000000005
           },
           {
             "id": 50638,
-            "droprate": 0
+            "droprate": 0.253
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.316
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.165
           }
         ]
       },
       {
         "name": "Icecrown Gunship Battle",
-        "objectId": [],
+        "objectId": [
+          201872,
+          201873,
+          201874,
+          201875
+        ],
+        "fromWotlkDb": true,
         "RAID10_DIFF": [
           {
             "id": 50791,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 50795,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 50797,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 50792,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 50789,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 50796,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 50788,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 50790,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 50340,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 50793,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 50787,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 50794,
-            "droprate": 0
+            "droprate": 0.08333
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 51912,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 51908,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 51906,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 51911,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 51914,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 51907,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 51915,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 51913,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 50345,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 51910,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 51916,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 51909,
-            "droprate": 0
+            "droprate": 0.08333
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.5
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 49998,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50006,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50011,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50001,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50009,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50000,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50003,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50002,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50010,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.75
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.5
           },
           {
             "id": 50005,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50008,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 49999,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50359,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50352,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50411,
-            "droprate": 0
+            "droprate": 0.06667
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 50653,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50661,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50663,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50656,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50665,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50655,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50660,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50659,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50667,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.75
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.5
           },
           {
             "id": 50658,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50664,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50657,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50366,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50349,
-            "droprate": 0
+            "droprate": 0.06667
           },
           {
             "id": 50654,
-            "droprate": 0
+            "droprate": 0.06667
           }
         ]
       },
       {
         "name": "Deathbringer Saurfang",
+        "npcId": [
+          37813
+        ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 50807,
-            "droprate": 0
+            "droprate": 0.1
           },
           {
             "id": 50804,
-            "droprate": 0
+            "droprate": 0.14400000000000002
           },
           {
             "id": 50799,
-            "droprate": 0
+            "droprate": 0.135
           },
           {
             "id": 50806,
-            "droprate": 0
+            "droprate": 0.113
           },
           {
             "id": 50800,
-            "droprate": 0
+            "droprate": 0.134
           },
           {
             "id": 50801,
-            "droprate": 0
+            "droprate": 0.11199999999999999
           },
           {
             "id": 50802,
-            "droprate": 0
+            "droprate": 0.09300000000000001
           },
           {
             "id": 50808,
-            "droprate": 0
+            "droprate": 0.11
           },
           {
             "id": 50809,
-            "droprate": 0
+            "droprate": 0.197
           },
           {
             "id": 50803,
-            "droprate": 0
+            "droprate": 0.18
           },
           {
             "id": 50798,
-            "droprate": 0
+            "droprate": 0.257
           },
           {
             "id": 50805,
-            "droprate": 0
+            "droprate": 0.253
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 51896,
-            "droprate": 0
+            "droprate": 0.094
           },
           {
             "id": 51899,
-            "droprate": 0
+            "droprate": 0.131
           },
           {
             "id": 51904,
-            "droprate": 0
+            "droprate": 0.12300000000000001
           },
           {
             "id": 51897,
-            "droprate": 0
+            "droprate": 0.113
           },
           {
             "id": 51903,
-            "droprate": 0
+            "droprate": 0.13699999999999998
           },
           {
             "id": 51902,
-            "droprate": 0
+            "droprate": 0.114
           },
           {
             "id": 51901,
-            "droprate": 0
+            "droprate": 0.081
           },
           {
             "id": 51895,
-            "droprate": 0
+            "droprate": 0.09
           },
           {
             "id": 51894,
-            "droprate": 0
+            "droprate": 0.209
           },
           {
             "id": 51900,
-            "droprate": 0
+            "droprate": 0.17600000000000002
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.409
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.443
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.53
           },
           {
             "id": 51905,
-            "droprate": 0
+            "droprate": 0.24
           },
           {
             "id": 51898,
-            "droprate": 0
+            "droprate": 0.24
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.167
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 50014,
-            "droprate": 0
+            "droprate": 0.125
           },
           {
             "id": 50333,
-            "droprate": 0
+            "droprate": 0.141
           },
           {
             "id": 50015,
-            "droprate": 0
+            "droprate": 0.128
           },
           {
             "id": 50362,
-            "droprate": 0
+            "droprate": 0.23
           },
           {
             "id": 50412,
-            "droprate": 0
+            "droprate": 0.185
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.344
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.409
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.443
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.53
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 50668,
-            "droprate": 0
+            "droprate": 0.14800000000000002
           },
           {
             "id": 50670,
-            "droprate": 0
+            "droprate": 0.147
           },
           {
             "id": 50671,
-            "droprate": 0
+            "droprate": 0.11199999999999999
           },
           {
             "id": 50363,
-            "droprate": 0
+            "droprate": 0.223
           },
           {
             "id": 50672,
-            "droprate": 0
+            "droprate": 0.17
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.344
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 52030,
-            "droprate": 0
+            "droprate": 0.228
           },
           {
             "id": 52029,
-            "droprate": 0
+            "droprate": 0.275
           },
           {
             "id": 52028,
-            "droprate": 0
+            "droprate": 0.306
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.409
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.443
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.53
           }
         ]
       },
       {
         "name": "Festergut",
+        "npcId": [
+          36626
+        ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 50859,
-            "droprate": 0
+            "droprate": 0.10300000000000001
           },
           {
             "id": 50988,
-            "droprate": 0
+            "droprate": 0.113
           },
           {
             "id": 50990,
-            "droprate": 0
+            "droprate": 0.17800000000000002
           },
           {
             "id": 50985,
-            "droprate": 0
+            "droprate": 0.13699999999999998
           },
           {
             "id": 50858,
-            "droprate": 0
+            "droprate": 0.146
           },
           {
             "id": 50812,
-            "droprate": 0
+            "droprate": 0.145
           },
           {
             "id": 50967,
-            "droprate": 0
+            "droprate": 0.106
           },
           {
             "id": 50811,
-            "droprate": 0
+            "droprate": 0.14
           },
           {
             "id": 50852,
-            "droprate": 0
+            "droprate": 0.187
           },
           {
             "id": 50986,
-            "droprate": 0
+            "droprate": 0.135
           },
           {
             "id": 50810,
-            "droprate": 0
+            "droprate": 0.222
           },
           {
             "id": 50966,
-            "droprate": 0
+            "droprate": 0.28
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 51888,
-            "droprate": 0
+            "droprate": 0.096
           },
           {
             "id": 51883,
-            "droprate": 0
+            "droprate": 0.113
           },
           {
             "id": 51882,
-            "droprate": 0
+            "droprate": 0.184
           },
           {
             "id": 51885,
-            "droprate": 0
+            "droprate": 0.122
           },
           {
             "id": 51889,
-            "droprate": 0
+            "droprate": 0.151
           },
           {
             "id": 51891,
-            "droprate": 0
+            "droprate": 0.13699999999999998
           },
           {
             "id": 51886,
-            "droprate": 0
+            "droprate": 0.10800000000000001
           },
           {
             "id": 51892,
-            "droprate": 0
+            "droprate": 0.14
           },
           {
             "id": 51890,
-            "droprate": 0
+            "droprate": 0.17600000000000002
           },
           {
             "id": 51884,
-            "droprate": 0
+            "droprate": 0.109
           },
           {
             "id": 51893,
-            "droprate": 0
+            "droprate": 0.19899999999999998
           },
           {
             "id": 51887,
-            "droprate": 0
+            "droprate": 0.264
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.19
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 50063,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 50056,
-            "droprate": 0
+            "droprate": 0.182
           },
           {
             "id": 50062,
-            "droprate": 0
+            "droprate": 0.251
           },
           {
             "id": 50042,
-            "droprate": 0
+            "droprate": 0.17600000000000002
           },
           {
             "id": 50041,
-            "droprate": 0
+            "droprate": 0.131
           },
           {
             "id": 50059,
-            "droprate": 0
+            "droprate": 0.11599999999999999
           },
           {
             "id": 50038,
-            "droprate": 0
+            "droprate": 0.171
           },
           {
             "id": 50064,
-            "droprate": 0
+            "droprate": 0.152
           },
           {
             "id": 50413,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 50060,
-            "droprate": 0
+            "droprate": 0.161
           },
           {
             "id": 50037,
-            "droprate": 0
+            "droprate": 0.141
           },
           {
             "id": 50036,
-            "droprate": 0
+            "droprate": 0.10300000000000001
           },
           {
             "id": 50061,
-            "droprate": 0
+            "droprate": 0.156
           },
           {
             "id": 50414,
-            "droprate": 0
+            "droprate": 0.14300000000000002
           },
           {
             "id": 50035,
-            "droprate": 0
+            "droprate": 0.152
           },
           {
             "id": 50040,
-            "droprate": 0
+            "droprate": 0.28
           },
           {
             "id": 50226,
-            "droprate": 0
+            "droprate": 0.65
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.34700000000000003
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.19
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 50702,
-            "droprate": 0
+            "droprate": 0.159
           },
           {
             "id": 50694,
-            "droprate": 0
+            "droprate": 0.152
           },
           {
             "id": 50699,
-            "droprate": 0
+            "droprate": 0.225
           },
           {
             "id": 50697,
-            "droprate": 0
+            "droprate": 0.16899999999999998
           },
           {
             "id": 50696,
-            "droprate": 0
+            "droprate": 0.12400000000000001
           },
           {
             "id": 50698,
-            "droprate": 0
+            "droprate": 0.109
           },
           {
             "id": 50689,
-            "droprate": 0
+            "droprate": 0.147
           },
           {
             "id": 50703,
-            "droprate": 0
+            "droprate": 0.135
           },
           {
             "id": 50688,
-            "droprate": 0
+            "droprate": 0.133
           },
           {
             "id": 50701,
-            "droprate": 0
+            "droprate": 0.14400000000000002
           },
           {
             "id": 50690,
-            "droprate": 0
+            "droprate": 0.132
           },
           {
             "id": 50691,
-            "droprate": 0
+            "droprate": 0.10099999999999999
           },
           {
             "id": 50700,
-            "droprate": 0
+            "droprate": 0.149
           },
           {
             "id": 50693,
-            "droprate": 0
+            "droprate": 0.147
           },
           {
             "id": 50692,
-            "droprate": 0
+            "droprate": 0.142
           },
           {
             "id": 50695,
-            "droprate": 0
+            "droprate": 0.256
           },
           {
             "id": 50226,
-            "droprate": 0
+            "droprate": 0.65
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.34700000000000003
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.19
           }
         ]
       },
       {
         "name": "Rotface",
+        "npcId": [
+          36627
+        ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 51007,
-            "droprate": 0
+            "droprate": 0.18600000000000003
           },
           {
             "id": 51005,
-            "droprate": 0
+            "droprate": 0.125
           },
           {
             "id": 51009,
-            "droprate": 0
+            "droprate": 0.11900000000000001
           },
           {
             "id": 51002,
-            "droprate": 0
+            "droprate": 0.132
           },
           {
             "id": 51006,
-            "droprate": 0
+            "droprate": 0.121
           },
           {
             "id": 51000,
-            "droprate": 0
+            "droprate": 0.14800000000000002
           },
           {
             "id": 51008,
-            "droprate": 0
+            "droprate": 0.114
           },
           {
             "id": 51001,
-            "droprate": 0
+            "droprate": 0.134
           },
           {
             "id": 51003,
-            "droprate": 0
+            "droprate": 0.158
           },
           {
             "id": 51004,
-            "droprate": 0
+            "droprate": 0.281
           },
           {
             "id": 50998,
-            "droprate": 0
+            "droprate": 0.22100000000000003
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 51872,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 51874,
-            "droprate": 0
+            "droprate": 0.12400000000000001
           },
           {
             "id": 51870,
-            "droprate": 0
+            "droprate": 0.113
           },
           {
             "id": 51877,
-            "droprate": 0
+            "droprate": 0.14
           },
           {
             "id": 51873,
-            "droprate": 0
+            "droprate": 0.12
           },
           {
             "id": 51879,
-            "droprate": 0
+            "droprate": 0.12300000000000001
           },
           {
             "id": 51871,
-            "droprate": 0
+            "droprate": 0.12300000000000001
           },
           {
             "id": 51878,
-            "droprate": 0
+            "droprate": 0.147
           },
           {
             "id": 51876,
-            "droprate": 0
+            "droprate": 0.134
           },
           {
             "id": 51875,
-            "droprate": 0
+            "droprate": 0.264
           },
           {
             "id": 51881,
-            "droprate": 0
+            "droprate": 0.21100000000000002
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.184
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 50019,
-            "droprate": 0
+            "droprate": 0.195
           },
           {
             "id": 50032,
-            "droprate": 0
+            "droprate": 0.11199999999999999
           },
           {
             "id": 50026,
-            "droprate": 0
+            "droprate": 0.139
           },
           {
             "id": 50021,
-            "droprate": 0
+            "droprate": 0.172
           },
           {
             "id": 50022,
-            "droprate": 0
+            "droprate": 0.171
           },
           {
             "id": 50030,
-            "droprate": 0
+            "droprate": 0.11699999999999999
           },
           {
             "id": 50020,
-            "droprate": 0
+            "droprate": 0.16899999999999998
           },
           {
             "id": 50024,
-            "droprate": 0
+            "droprate": 0.128
           },
           {
             "id": 50027,
-            "droprate": 0
+            "droprate": 0.146
           },
           {
             "id": 50023,
-            "droprate": 0
+            "droprate": 0.197
           },
           {
             "id": 50025,
-            "droprate": 0
+            "droprate": 0.271
           },
           {
             "id": 50353,
-            "droprate": 0
+            "droprate": 0.214
           },
           {
             "id": 50028,
-            "droprate": 0
+            "droprate": 0.271
           },
           {
             "id": 50016,
-            "droprate": 0
+            "droprate": 0.163
           },
           {
             "id": 50033,
-            "droprate": 0
+            "droprate": 0.172
           },
           {
             "id": 50231,
-            "droprate": 0
+            "droprate": 0.639
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.35600000000000004
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.184
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 50677,
-            "droprate": 0
+            "droprate": 0.155
           },
           {
             "id": 50686,
-            "droprate": 0
+            "droprate": 0.09699999999999999
           },
           {
             "id": 50679,
-            "droprate": 0
+            "droprate": 0.122
           },
           {
             "id": 50675,
-            "droprate": 0
+            "droprate": 0.16399999999999998
           },
           {
             "id": 50673,
-            "droprate": 0
+            "droprate": 0.165
           },
           {
             "id": 50687,
-            "droprate": 0
+            "droprate": 0.10099999999999999
           },
           {
             "id": 50674,
-            "droprate": 0
+            "droprate": 0.163
           },
           {
             "id": 50681,
-            "droprate": 0
+            "droprate": 0.12
           },
           {
             "id": 50680,
-            "droprate": 0
+            "droprate": 0.128
           },
           {
             "id": 50682,
-            "droprate": 0
+            "droprate": 0.19399999999999998
           },
           {
             "id": 50678,
-            "droprate": 0
+            "droprate": 0.249
           },
           {
             "id": 50348,
-            "droprate": 0
+            "droprate": 0.214
           },
           {
             "id": 50685,
-            "droprate": 0
+            "droprate": 0.23399999999999999
           },
           {
             "id": 50676,
-            "droprate": 0
+            "droprate": 0.161
           },
           {
             "id": 50684,
-            "droprate": 0
+            "droprate": 0.168
           },
           {
             "id": 50231,
-            "droprate": 0
+            "droprate": 0.639
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.35600000000000004
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.184
           }
         ]
       },
       {
         "name": "Professor Putricide",
+        "npcId": [
+          36678
+        ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 51020,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 51017,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 51013,
-            "droprate": 0
+            "droprate": 0.18600000000000003
           },
           {
             "id": 51015,
-            "droprate": 0
+            "droprate": 0.16
           },
           {
             "id": 51019,
-            "droprate": 0
+            "droprate": 0.121
           },
           {
             "id": 51014,
-            "droprate": 0
+            "droprate": 0.151
           },
           {
             "id": 51018,
-            "droprate": 0
+            "droprate": 0.10099999999999999
           },
           {
             "id": 51012,
-            "droprate": 0
+            "droprate": 0.156
           },
           {
             "id": 51016,
-            "droprate": 0
+            "droprate": 0.22399999999999998
           },
           {
             "id": 50341,
-            "droprate": 0
+            "droprate": 0.17500000000000002
           },
           {
             "id": 51011,
-            "droprate": 0
+            "droprate": 0.142
           },
           {
             "id": 51010,
-            "droprate": 0
+            "droprate": 0.152
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 51859,
-            "droprate": 0
+            "droprate": 0.165
           },
           {
             "id": 51862,
-            "droprate": 0
+            "droprate": 0.165
           },
           {
             "id": 51866,
-            "droprate": 0
+            "droprate": 0.14300000000000002
           },
           {
             "id": 51864,
-            "droprate": 0
+            "droprate": 0.142
           },
           {
             "id": 51860,
-            "droprate": 0
+            "droprate": 0.11800000000000001
           },
           {
             "id": 51865,
-            "droprate": 0
+            "droprate": 0.147
           },
           {
             "id": 51861,
-            "droprate": 0
+            "droprate": 0.10099999999999999
           },
           {
             "id": 51867,
-            "droprate": 0
+            "droprate": 0.15
           },
           {
             "id": 51863,
-            "droprate": 0
+            "droprate": 0.198
           },
           {
             "id": 50344,
-            "droprate": 0
+            "droprate": 0.153
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.397
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.433
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.49100000000000005
           },
           {
             "id": 51868,
-            "droprate": 0
+            "droprate": 0.159
           },
           {
             "id": 51869,
-            "droprate": 0
+            "droprate": 0.159
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.185
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 50067,
-            "droprate": 0
+            "droprate": 0.151
           },
           {
             "id": 50069,
-            "droprate": 0
+            "droprate": 0.11
           },
           {
             "id": 50351,
-            "droprate": 0
+            "droprate": 0.256
           },
           {
             "id": 50179,
-            "droprate": 0
+            "droprate": 0.19399999999999998
           },
           {
             "id": 50068,
-            "droprate": 0
+            "droprate": 0.18
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.35000000000000003
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.185
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.397
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.433
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.49100000000000005
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 50707,
-            "droprate": 0
+            "droprate": 0.16
           },
           {
             "id": 50705,
-            "droprate": 0
+            "droprate": 0.10099999999999999
           },
           {
             "id": 50706,
-            "droprate": 0
+            "droprate": 0.198
           },
           {
             "id": 50708,
-            "droprate": 0
+            "droprate": 0.155
           },
           {
             "id": 50704,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.35000000000000003
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.185
           },
           {
             "id": 52030,
-            "droprate": 0
+            "droprate": 0.24100000000000002
           },
           {
             "id": 52029,
-            "droprate": 0
+            "droprate": 0.256
           },
           {
             "id": 52028,
-            "droprate": 0
+            "droprate": 0.299
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.397
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.433
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.49100000000000005
           }
         ]
       },
       {
         "name": "Blood Prince Council",
+        "npcId": [
+          37970
+        ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 51382,
-            "droprate": 0
+            "droprate": 0.109
           },
           {
             "id": 51379,
-            "droprate": 0
+            "droprate": 0.12
           },
           {
             "id": 51380,
-            "droprate": 0
+            "droprate": 0.114
           },
           {
             "id": 51023,
-            "droprate": 0
+            "droprate": 0.14
           },
           {
             "id": 51325,
-            "droprate": 0
+            "droprate": 0.147
           },
           {
             "id": 51383,
-            "droprate": 0
+            "droprate": 0.127
           },
           {
             "id": 51025,
-            "droprate": 0
+            "droprate": 0.14300000000000002
           },
           {
             "id": 51381,
-            "droprate": 0
+            "droprate": 0.242
           },
           {
             "id": 51024,
-            "droprate": 0
+            "droprate": 0.146
           },
           {
             "id": 51021,
-            "droprate": 0
+            "droprate": 0.14300000000000002
           },
           {
             "id": 51022,
-            "droprate": 0
+            "droprate": 0.20800000000000002
           },
           {
             "id": 51326,
-            "droprate": 0
+            "droprate": 0.23800000000000002
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 51848,
-            "droprate": 0
+            "droprate": 0.125
           },
           {
             "id": 51851,
-            "droprate": 0
+            "droprate": 0.09300000000000001
           },
           {
             "id": 51850,
-            "droprate": 0
+            "droprate": 0.091
           },
           {
             "id": 51856,
-            "droprate": 0
+            "droprate": 0.153
           },
           {
             "id": 51853,
-            "droprate": 0
+            "droprate": 0.12300000000000001
           },
           {
             "id": 51847,
-            "droprate": 0
+            "droprate": 0.114
           },
           {
             "id": 51854,
-            "droprate": 0
+            "droprate": 0.131
           },
           {
             "id": 51849,
-            "droprate": 0
+            "droprate": 0.24300000000000002
           },
           {
             "id": 51855,
-            "droprate": 0
+            "droprate": 0.132
           },
           {
             "id": 51858,
-            "droprate": 0
+            "droprate": 0.131
           },
           {
             "id": 51857,
-            "droprate": 0
+            "droprate": 0.21100000000000002
           },
           {
             "id": 51852,
-            "droprate": 0
+            "droprate": 0.218
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.16899999999999998
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 50074,
-            "droprate": 0
+            "droprate": 0.161
           },
           {
             "id": 50172,
-            "droprate": 0
+            "droprate": 0.131
           },
           {
             "id": 50176,
-            "droprate": 0
+            "droprate": 0.142
           },
           {
             "id": 50073,
-            "droprate": 0
+            "droprate": 0.14300000000000002
           },
           {
             "id": 50171,
-            "droprate": 0
+            "droprate": 0.135
           },
           {
             "id": 50177,
-            "droprate": 0
+            "droprate": 0.126
           },
           {
             "id": 50071,
-            "droprate": 0
+            "droprate": 0.156
           },
           {
             "id": 50072,
-            "droprate": 0
+            "droprate": 0.13699999999999998
           },
           {
             "id": 50175,
-            "droprate": 0
+            "droprate": 0.152
           },
           {
             "id": 50075,
-            "droprate": 0
+            "droprate": 0.146
           },
           {
             "id": 50174,
-            "droprate": 0
+            "droprate": 0.136
           },
           {
             "id": 50170,
-            "droprate": 0
+            "droprate": 0.303
           },
           {
             "id": 50184,
-            "droprate": 0
+            "droprate": 0.142
           },
           {
             "id": 49919,
-            "droprate": 0
+            "droprate": 0.272
           },
           {
             "id": 50173,
-            "droprate": 0
+            "droprate": 0.318
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.311
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.16899999999999998
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 50718,
-            "droprate": 0
+            "droprate": 0.121
           },
           {
             "id": 50717,
-            "droprate": 0
+            "droprate": 0.13
           },
           {
             "id": 50722,
-            "droprate": 0
+            "droprate": 0.11900000000000001
           },
           {
             "id": 50713,
-            "droprate": 0
+            "droprate": 0.125
           },
           {
             "id": 50715,
-            "droprate": 0
+            "droprate": 0.139
           },
           {
             "id": 50723,
-            "droprate": 0
+            "droprate": 0.126
           },
           {
             "id": 50711,
-            "droprate": 0
+            "droprate": 0.127
           },
           {
             "id": 50712,
-            "droprate": 0
+            "droprate": 0.135
           },
           {
             "id": 50721,
-            "droprate": 0
+            "droprate": 0.138
           },
           {
             "id": 50716,
-            "droprate": 0
+            "droprate": 0.13
           },
           {
             "id": 50720,
-            "droprate": 0
+            "droprate": 0.121
           },
           {
             "id": 50714,
-            "droprate": 0
+            "droprate": 0.27899999999999997
           },
           {
             "id": 50710,
-            "droprate": 0
+            "droprate": 0.127
           },
           {
             "id": 50603,
-            "droprate": 0
+            "droprate": 0.265
           },
           {
             "id": 50719,
-            "droprate": 0
+            "droprate": 0.29300000000000004
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.311
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.16899999999999998
           }
         ]
       },
       {
         "name": "Blood-Queen Lana'thel",
+        "npcId": [
+          37955
+        ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 51554,
-            "droprate": 0
+            "droprate": 0.22100000000000003
           },
           {
             "id": 51552,
-            "droprate": 0
+            "droprate": 0.127
           },
           {
             "id": 51550,
-            "droprate": 0
+            "droprate": 0.138
           },
           {
             "id": 51551,
-            "droprate": 0
+            "droprate": 0.11900000000000001
           },
           {
             "id": 51386,
-            "droprate": 0
+            "droprate": 0.138
           },
           {
             "id": 51556,
-            "droprate": 0
+            "droprate": 0.129
           },
           {
             "id": 51555,
-            "droprate": 0
+            "droprate": 0.132
           },
           {
             "id": 51548,
-            "droprate": 0
+            "droprate": 0.136
           },
           {
             "id": 51387,
-            "droprate": 0
+            "droprate": 0.182
           },
           {
             "id": 51384,
-            "droprate": 0
+            "droprate": 0.13699999999999998
           },
           {
             "id": 51385,
-            "droprate": 0
+            "droprate": 0.195
           },
           {
             "id": 51553,
-            "droprate": 0
+            "droprate": 0.209
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 51837,
-            "droprate": 0
+            "droprate": 0.19100000000000003
           },
           {
             "id": 51839,
-            "droprate": 0
+            "droprate": 0.133
           },
           {
             "id": 51841,
-            "droprate": 0
+            "droprate": 0.134
           },
           {
             "id": 51840,
-            "droprate": 0
+            "droprate": 0.121
           },
           {
             "id": 51844,
-            "droprate": 0
+            "droprate": 0.129
           },
           {
             "id": 51835,
-            "droprate": 0
+            "droprate": 0.127
           },
           {
             "id": 51836,
-            "droprate": 0
+            "droprate": 0.14300000000000002
           },
           {
             "id": 51842,
-            "droprate": 0
+            "droprate": 0.131
           },
           {
             "id": 51843,
-            "droprate": 0
+            "droprate": 0.189
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.42
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.42700000000000005
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.515
           },
           {
             "id": 51846,
-            "droprate": 0
+            "droprate": 0.122
           },
           {
             "id": 51845,
-            "droprate": 0
+            "droprate": 0.19399999999999998
           },
           {
             "id": 51838,
-            "droprate": 0
+            "droprate": 0.189
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.17300000000000001
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 50182,
-            "droprate": 0
+            "droprate": 0.153
           },
           {
             "id": 50180,
-            "droprate": 0
+            "droprate": 0.10400000000000001
           },
           {
             "id": 50354,
-            "droprate": 0
+            "droprate": 0.12
           },
           {
             "id": 50178,
-            "droprate": 0
+            "droprate": 0.174
           },
           {
             "id": 50181,
-            "droprate": 0
+            "droprate": 0.179
           },
           {
             "id": 50065,
-            "droprate": 0
+            "droprate": 0.115
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.327
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.17300000000000001
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.42
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.42700000000000005
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.515
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 50724,
-            "droprate": 0
+            "droprate": 0.166
           },
           {
             "id": 50728,
-            "droprate": 0
+            "droprate": 0.09699999999999999
           },
           {
             "id": 50726,
-            "droprate": 0
+            "droprate": 0.11
           },
           {
             "id": 50727,
-            "droprate": 0
+            "droprate": 0.161
           },
           {
             "id": 50725,
-            "droprate": 0
+            "droprate": 0.14800000000000002
           },
           {
             "id": 50729,
-            "droprate": 0
+            "droprate": 0.106
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.327
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.17300000000000001
           },
           {
             "id": 52030,
-            "droprate": 0
+            "droprate": 0.237
           },
           {
             "id": 52029,
-            "droprate": 0
+            "droprate": 0.24300000000000002
           },
           {
             "id": 52028,
-            "droprate": 0
+            "droprate": 0.331
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.42
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.42700000000000005
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.515
           }
         ]
       },
       {
         "name": "Valithria Dreamwalker",
+        "npcId": [
+          36789
+        ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 51584,
-            "droprate": 0
+            "droprate": 0.22100000000000003
           },
           {
             "id": 51777,
-            "droprate": 0
+            "droprate": 0.10300000000000001
           },
           {
             "id": 51585,
-            "droprate": 0
+            "droprate": 0.11
           },
           {
             "id": 51565,
-            "droprate": 0
+            "droprate": 0.145
           },
           {
             "id": 51583,
-            "droprate": 0
+            "droprate": 0.11699999999999999
           },
           {
             "id": 51566,
-            "droprate": 0
+            "droprate": 0.121
           },
           {
             "id": 51586,
-            "droprate": 0
+            "droprate": 0.12
           },
           {
             "id": 51563,
-            "droprate": 0
+            "droprate": 0.131
           },
           {
             "id": 51564,
-            "droprate": 0
+            "droprate": 0.09300000000000001
           },
           {
             "id": 51562,
-            "droprate": 0
+            "droprate": 0.27899999999999997
           },
           {
             "id": 51582,
-            "droprate": 0
+            "droprate": 0.22
           },
           {
             "id": 51561,
-            "droprate": 0
+            "droprate": 0.121
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 51826,
-            "droprate": 0
+            "droprate": 0.223
           },
           {
             "id": 51823,
-            "droprate": 0
+            "droprate": 0.095
           },
           {
             "id": 51825,
-            "droprate": 0
+            "droprate": 0.106
           },
           {
             "id": 51830,
-            "droprate": 0
+            "droprate": 0.11800000000000001
           },
           {
             "id": 51827,
-            "droprate": 0
+            "droprate": 0.111
           },
           {
             "id": 51829,
-            "droprate": 0
+            "droprate": 0.128
           },
           {
             "id": 51824,
-            "droprate": 0
+            "droprate": 0.081
           },
           {
             "id": 51832,
-            "droprate": 0
+            "droprate": 0.13699999999999998
           },
           {
             "id": 51831,
-            "droprate": 0
+            "droprate": 0.078
           },
           {
             "id": 51833,
-            "droprate": 0
+            "droprate": 0.276
           },
           {
             "id": 51828,
-            "droprate": 0
+            "droprate": 0.22899999999999998
           },
           {
             "id": 51834,
-            "droprate": 0
+            "droprate": 0.126
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.138
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 50205,
-            "droprate": 0
+            "droprate": 0.29600000000000004
           },
           {
             "id": 50418,
-            "droprate": 0
+            "droprate": 0.185
           },
           {
             "id": 50417,
-            "droprate": 0
+            "droprate": 0.08800000000000001
           },
           {
             "id": 50202,
-            "droprate": 0
+            "droprate": 0.16899999999999998
           },
           {
             "id": 50188,
-            "droprate": 0
+            "droprate": 0.12400000000000001
           },
           {
             "id": 50187,
-            "droprate": 0
+            "droprate": 0.21
           },
           {
             "id": 50199,
-            "droprate": 0
+            "droprate": 0.115
           },
           {
             "id": 50192,
-            "droprate": 0
+            "droprate": 0.24
           },
           {
             "id": 50416,
-            "droprate": 0
+            "droprate": 0.115
           },
           {
             "id": 50190,
-            "droprate": 0
+            "droprate": 0.13699999999999998
           },
           {
             "id": 50195,
-            "droprate": 0
+            "droprate": 0.204
           },
           {
             "id": 50185,
-            "droprate": 0
+            "droprate": 0.11199999999999999
           },
           {
             "id": 50186,
-            "droprate": 0
+            "droprate": 0.193
           },
           {
             "id": 50183,
-            "droprate": 0
+            "droprate": 0.20199999999999999
           },
           {
             "id": 50472,
-            "droprate": 0
+            "droprate": 0.165
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.23800000000000002
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.138
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 50628,
-            "droprate": 0
+            "droprate": 0.258
           },
           {
             "id": 50629,
-            "droprate": 0
+            "droprate": 0.13699999999999998
           },
           {
             "id": 50630,
-            "droprate": 0
+            "droprate": 0.08900000000000001
           },
           {
             "id": 50626,
-            "droprate": 0
+            "droprate": 0.11199999999999999
           },
           {
             "id": 50619,
-            "droprate": 0
+            "droprate": 0.17
           },
           {
             "id": 50620,
-            "droprate": 0
+            "droprate": 0.162
           },
           {
             "id": 50623,
-            "droprate": 0
+            "droprate": 0.12
           },
           {
             "id": 50624,
-            "droprate": 0
+            "droprate": 0.197
           },
           {
             "id": 50632,
-            "droprate": 0
+            "droprate": 0.109
           },
           {
             "id": 50625,
-            "droprate": 0
+            "droprate": 0.13
           },
           {
             "id": 50627,
-            "droprate": 0
+            "droprate": 0.129
           },
           {
             "id": 50622,
-            "droprate": 0
+            "droprate": 0.065
           },
           {
             "id": 50618,
-            "droprate": 0
+            "droprate": 0.18
           },
           {
             "id": 50621,
-            "droprate": 0
+            "droprate": 0.138
           },
           {
             "id": 50631,
-            "droprate": 0
+            "droprate": 0.147
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.23800000000000002
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.138
           }
         ]
       },
       {
         "name": "Sindragosa",
+        "npcId": [
+          36853
+        ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 51790,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 51783,
-            "droprate": 0
+            "droprate": 0.12300000000000001
           },
           {
             "id": 51789,
-            "droprate": 0
+            "droprate": 0.125
           },
           {
             "id": 51792,
-            "droprate": 0
+            "droprate": 0.122
           },
           {
             "id": 51785,
-            "droprate": 0
+            "droprate": 0.135
           },
           {
             "id": 51782,
-            "droprate": 0
+            "droprate": 0.14400000000000002
           },
           {
             "id": 51786,
-            "droprate": 0
+            "droprate": 0.13699999999999998
           },
           {
             "id": 51787,
-            "droprate": 0
+            "droprate": 0.09699999999999999
           },
           {
             "id": 51779,
-            "droprate": 0
+            "droprate": 0.209
           },
           {
             "id": 51784,
-            "droprate": 0
+            "droprate": 0.161
           },
           {
             "id": 51788,
-            "droprate": 0
+            "droprate": 0.255
           },
           {
             "id": 51791,
-            "droprate": 0
+            "droprate": 0.155
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 51813,
-            "droprate": 0
+            "droprate": 0.158
           },
           {
             "id": 51820,
-            "droprate": 0
+            "droprate": 0.146
           },
           {
             "id": 51814,
-            "droprate": 0
+            "droprate": 0.076
           },
           {
             "id": 51811,
-            "droprate": 0
+            "droprate": 0.106
           },
           {
             "id": 51818,
-            "droprate": 0
+            "droprate": 0.159
           },
           {
             "id": 51821,
-            "droprate": 0
+            "droprate": 0.106
           },
           {
             "id": 51817,
-            "droprate": 0
+            "droprate": 0.114
           },
           {
             "id": 51816,
-            "droprate": 0
+            "droprate": 0.125
           },
           {
             "id": 51822,
-            "droprate": 0
+            "droprate": 0.207
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.327
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.41000000000000003
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.543
           },
           {
             "id": 51819,
-            "droprate": 0
+            "droprate": 0.11599999999999999
           },
           {
             "id": 51815,
-            "droprate": 0
+            "droprate": 0.25
           },
           {
             "id": 51812,
-            "droprate": 0
+            "droprate": 0.13699999999999998
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.17800000000000002
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 50421,
-            "droprate": 0
+            "droprate": 0.21600000000000003
           },
           {
             "id": 50424,
-            "droprate": 0
+            "droprate": 0.13699999999999998
           },
           {
             "id": 50360,
-            "droprate": 0
+            "droprate": 0.21300000000000002
           },
           {
             "id": 50361,
-            "droprate": 0
+            "droprate": 0.153
           },
           {
             "id": 50423,
-            "droprate": 0
+            "droprate": 0.165
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.331
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.17800000000000002
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.327
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.41000000000000003
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.543
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 50633,
-            "droprate": 0
+            "droprate": 0.13
           },
           {
             "id": 50636,
-            "droprate": 0
+            "droprate": 0.11599999999999999
           },
           {
             "id": 50365,
-            "droprate": 0
+            "droprate": 0.23500000000000001
           },
           {
             "id": 50364,
-            "droprate": 0
+            "droprate": 0.11
           },
           {
             "id": 50635,
-            "droprate": 0
+            "droprate": 0.16
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.331
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.17800000000000002
           },
           {
             "id": 52030,
-            "droprate": 0
+            "droprate": 0.21
           },
           {
             "id": 52029,
-            "droprate": 0
+            "droprate": 0.228
           },
           {
             "id": 52028,
-            "droprate": 0
+            "droprate": 0.28800000000000003
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.327
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.41000000000000003
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.543
           }
         ]
       },
       {
         "name": "The Lich King",
+        "npcId": [
+          36597
+        ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 51801,
-            "droprate": 0
+            "droprate": 0.133
           },
           {
             "id": 51803,
-            "droprate": 0
+            "droprate": 0.217
           },
           {
             "id": 51800,
-            "droprate": 0
+            "droprate": 0.14800000000000002
           },
           {
             "id": 51795,
-            "droprate": 0
+            "droprate": 0.13
           },
           {
             "id": 51798,
-            "droprate": 0
+            "droprate": 0.198
           },
           {
             "id": 51796,
-            "droprate": 0
+            "droprate": 0.28500000000000003
           },
           {
             "id": 51799,
-            "droprate": 0
+            "droprate": 0.20800000000000002
           },
           {
             "id": 51797,
-            "droprate": 0
+            "droprate": 0.20600000000000002
           },
           {
             "id": 51802,
-            "droprate": 0
+            "droprate": 0.21600000000000003
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 51941,
-            "droprate": 0
+            "droprate": 0.14400000000000002
           },
           {
             "id": 51939,
-            "droprate": 0
+            "droprate": 0.20800000000000002
           },
           {
             "id": 51942,
-            "droprate": 0
+            "droprate": 0.129
           },
           {
             "id": 51947,
-            "droprate": 0
+            "droprate": 0.138
           },
           {
             "id": 51944,
-            "droprate": 0
+            "droprate": 0.212
           },
           {
             "id": 51946,
-            "droprate": 0
+            "droprate": 0.267
           },
           {
             "id": 51943,
-            "droprate": 0
+            "droprate": 0.2
           },
           {
             "id": 51945,
-            "droprate": 0
+            "droprate": 0.207
           },
           {
             "id": 51940,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.358
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.408
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.47200000000000003
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.163
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 50426,
-            "droprate": 0
+            "droprate": 0.145
           },
           {
             "id": 50427,
-            "droprate": 0
+            "droprate": 0.12
           },
           {
             "id": 50070,
-            "droprate": 0
+            "droprate": 0.258
           },
           {
             "id": 50012,
-            "droprate": 0
+            "droprate": 0.188
           },
           {
             "id": 50428,
-            "droprate": 0
+            "droprate": 0.17800000000000002
           },
           {
             "id": 49997,
-            "droprate": 0
+            "droprate": 0.113
           },
           {
             "id": 50425,
-            "droprate": 0
+            "droprate": 0.165
           },
           {
             "id": 50429,
-            "droprate": 0
+            "droprate": 0.193
           },
           {
             "id": 49981,
-            "droprate": 0
+            "droprate": 0.17800000000000002
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.358
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.408
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.47200000000000003
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.3
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.163
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 50736,
-            "droprate": 0
+            "droprate": 0.099
           },
           {
             "id": 50732,
-            "droprate": 0
+            "droprate": 0.114
           },
           {
             "id": 50730,
-            "droprate": 0
+            "droprate": 0.20800000000000002
           },
           {
             "id": 50737,
-            "droprate": 0
+            "droprate": 0.15
           },
           {
             "id": 50734,
-            "droprate": 0
+            "droprate": 0.17300000000000001
           },
           {
             "id": 50738,
-            "droprate": 0
+            "droprate": 0.115
           },
           {
             "id": 50735,
-            "droprate": 0
+            "droprate": 0.17
           },
           {
             "id": 50731,
-            "droprate": 0
+            "droprate": 0.162
           },
           {
             "id": 50733,
-            "droprate": 0
+            "droprate": 0.159
           },
           {
             "id": 50818,
-            "droprate": 0
+            "droprate": 0.054000000000000006
           },
           {
             "id": 50274,
-            "droprate": 0
+            "droprate": 0.3
           },
           {
             "id": 49908,
-            "droprate": 0
+            "droprate": 0.163
           },
           {
             "id": 52030,
-            "droprate": 0
+            "droprate": 0.22399999999999998
           },
           {
             "id": 52029,
-            "droprate": 0
+            "droprate": 0.21100000000000002
           },
           {
             "id": 52028,
-            "droprate": 0
+            "droprate": 0.29300000000000004
           },
           {
             "id": 52027,
-            "droprate": 0
+            "droprate": 0.358
           },
           {
             "id": 52026,
-            "droprate": 0
+            "droprate": 0.408
           },
           {
             "id": 52025,
-            "droprate": 0
+            "droprate": 0.47200000000000003
           }
         ]
       },
@@ -12026,250 +14995,253 @@
     ]
   },
   {
-    "name": "RubySanctum",
+    "name": "Ruby Sanctum",
     "id": 4987,
     "contentType": "RAID_CONTENT",
     "sources": [
       {
         "name": "Halion",
+        "npcId": [
+          39863
+        ],
         "objectId": [],
         "RAID10_DIFF": [
           {
             "id": 53115,
-            "droprate": 0
+            "droprate": 0.138
           },
           {
             "id": 53118,
-            "droprate": 0
+            "droprate": 0.255
           },
           {
             "id": 53114,
-            "droprate": 0
+            "droprate": 0.196
           },
           {
             "id": 53117,
-            "droprate": 0
+            "droprate": 0.111
           },
           {
             "id": 53113,
-            "droprate": 0
+            "droprate": 0.16399999999999998
           },
           {
             "id": 53119,
-            "droprate": 0
+            "droprate": 0.11900000000000001
           },
           {
             "id": 53112,
-            "droprate": 0
+            "droprate": 0.153
           },
           {
             "id": 53121,
-            "droprate": 0
+            "droprate": 0.081
           },
           {
             "id": 53111,
-            "droprate": 0
+            "droprate": 0.1
           },
           {
             "id": 53103,
-            "droprate": 0
+            "droprate": 0.204
           },
           {
             "id": 53116,
-            "droprate": 0
+            "droprate": 0.226
           },
           {
             "id": 53110,
-            "droprate": 0
+            "droprate": 0.10800000000000001
           }
         ],
         "RAID10H_DIFF": [
           {
             "id": 54556,
-            "droprate": 0
+            "droprate": 0.14800000000000002
           },
           {
             "id": 54562,
-            "droprate": 0
+            "droprate": 0.179
           },
           {
             "id": 54561,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 54560,
-            "droprate": 0
+            "droprate": 0.14
           },
           {
             "id": 54566,
-            "droprate": 0
+            "droprate": 0.11699999999999999
           },
           {
             "id": 54558,
-            "droprate": 0
+            "droprate": 0.133
           },
           {
             "id": 54559,
-            "droprate": 0
+            "droprate": 0.167
           },
           {
             "id": 54565,
-            "droprate": 0
+            "droprate": 0.11
           },
           {
             "id": 54564,
-            "droprate": 0
+            "droprate": 0.121
           },
           {
             "id": 54557,
-            "droprate": 0
+            "droprate": 0.155
           },
           {
             "id": 54563,
-            "droprate": 0
+            "droprate": 0.133
           },
           {
             "id": 54567,
-            "droprate": 0
+            "droprate": 0.126
           }
         ],
         "RAID25_DIFF": [
           {
             "id": 53489,
-            "droprate": 0
+            "droprate": 0.239
           },
           {
             "id": 53486,
-            "droprate": 0
+            "droprate": 0.22899999999999998
           },
           {
             "id": 53134,
-            "droprate": 0
+            "droprate": 0.14
           },
           {
             "id": 53126,
-            "droprate": 0
+            "droprate": 0.19100000000000003
           },
           {
             "id": 53488,
-            "droprate": 0
+            "droprate": 0.13
           },
           {
             "id": 53127,
-            "droprate": 0
+            "droprate": 0.11900000000000001
           },
           {
             "id": 53125,
-            "droprate": 0
+            "droprate": 0.08199999999999999
           },
           {
             "id": 53487,
-            "droprate": 0
+            "droprate": 0.14
           },
           {
             "id": 53129,
-            "droprate": 0
+            "droprate": 0.12300000000000001
           },
           {
             "id": 53132,
-            "droprate": 0
+            "droprate": 0.11599999999999999
           },
           {
             "id": 53490,
-            "droprate": 0
+            "droprate": 0.078
           },
           {
             "id": 53133,
-            "droprate": 0
+            "droprate": 0.294
           },
           {
             "id": 54572,
-            "droprate": 0
+            "droprate": 0.249
           },
           {
             "id": 54573,
-            "droprate": 0
+            "droprate": 0.20500000000000002
           },
           {
             "id": 54571,
-            "droprate": 0
+            "droprate": 0.225
           },
           {
             "id": 54569,
-            "droprate": 0
+            "droprate": 0.287
           }
         ],
         "RAID25H_DIFF": [
           {
             "id": 54583,
-            "droprate": 0
+            "droprate": 0.258
           },
           {
             "id": 54582,
-            "droprate": 0
+            "droprate": 0.14400000000000002
           },
           {
             "id": 54584,
-            "droprate": 0
+            "droprate": 0.153
           },
           {
             "id": 54580,
-            "droprate": 0
+            "droprate": 0.105
           },
           {
             "id": 54587,
-            "droprate": 0
+            "droprate": 0.052000000000000005
           },
           {
             "id": 54577,
-            "droprate": 0
+            "droprate": 0.127
           },
           {
             "id": 54578,
-            "droprate": 0
+            "droprate": 0.087
           },
           {
             "id": 54586,
-            "droprate": 0
+            "droprate": 0.135
           },
           {
             "id": 54579,
-            "droprate": 0
+            "droprate": 0.057
           },
           {
             "id": 54581,
-            "droprate": 0
+            "droprate": 0.087
           },
           {
             "id": 54585,
-            "droprate": 0
+            "droprate": 0.039
           },
           {
             "id": 54576,
-            "droprate": 0
+            "droprate": 0.297
           },
           {
             "id": 54588,
-            "droprate": 0
+            "droprate": 0.197
           },
           {
             "id": 54589,
-            "droprate": 0
+            "droprate": 0.14
           },
           {
             "id": 54591,
-            "droprate": 0
+            "droprate": 0.157
           },
           {
             "id": 54590,
-            "droprate": 0
+            "droprate": 0.284
           }
         ]
       }
     ]
   },
   {
-    "name": "VaultofArchavon",
+    "name": "Vault of Archavon",
     "id": 4603,
     "contentType": "RAID_CONTENT",
     "sources": [
