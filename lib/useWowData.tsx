@@ -7,6 +7,7 @@ import { PopulateInstance } from "./populateInstance";
 export type WowData = {
     hasData: boolean;
     items: Item[];
+    exchanges: { [key: number]: number[] };
     instances: {
         classic: PopulatedInstance[];
         tbc: PopulatedInstance[];
@@ -17,6 +18,7 @@ export type WowData = {
 const dataContext = createContext<WowData>({
     hasData: false,
     items: [],
+    exchanges: {},
     instances: {
         classic: [],
         tbc: [],
@@ -28,6 +30,7 @@ const WowDataProvider = ({ children, filePath }: { children: ReactNode; filePath
     const [value, setValue] = useState<WowData>({
         hasData: false,
         items: [],
+        exchanges: {},
         instances: {
             classic: [],
             tbc: [],
@@ -48,6 +51,7 @@ const WowDataProvider = ({ children, filePath }: { children: ReactNode; filePath
             const newWowData: WowData = {
                 hasData: false,
                 items: [],
+                exchanges: {},
                 instances: {
                     classic: [],
                     tbc: [],
@@ -60,22 +64,32 @@ const WowDataProvider = ({ children, filePath }: { children: ReactNode; filePath
                 if (!text) continue;
 
                 const json = JSON.parse(text);
-                if (entries[i].filename === "items.json") newWowData.items = json;
-                else if (entries[i].filename === "instances-classic.json")
-                    newWowData.instances.classic = json;
-                else if (entries[i].filename === "instances-tbc.json")
-                    newWowData.instances.tbc = json;
-                else if (entries[i].filename === "instances-wotlk.json")
-                    newWowData.instances.wotlk = json;
+                switch (entries[i].filename) {
+                    case "items.json":
+                        newWowData.items = json;
+                        break;
+                    case "exchanges.json":
+                        newWowData.exchanges = json;
+                        break;
+                    case "instances-classic.json":
+                        newWowData.instances.classic = json;
+                        break;
+                    case "instances-tbc.json":
+                        newWowData.instances.tbc = json;
+                        break;
+                    case "instances-wotlk.json":
+                        newWowData.instances.wotlk = json;
+                        break;
+                }
             }
             newWowData.instances.classic = newWowData.instances.classic.map(
-                (i: PopulatedInstance) => PopulateInstance(i, newWowData.items)
+                (i: PopulatedInstance) => PopulateInstance("classic", i, newWowData.items)
             );
             newWowData.instances.tbc = newWowData.instances.tbc.map((i: PopulatedInstance) =>
-                PopulateInstance(i, newWowData.items)
+                PopulateInstance("tbc", i, newWowData.items)
             );
             newWowData.instances.wotlk = newWowData.instances.wotlk.map((i: PopulatedInstance) =>
-                PopulateInstance(i, newWowData.items)
+                PopulateInstance("wotlk", i, newWowData.items)
             );
             newWowData.hasData = true;
             setValue(newWowData);

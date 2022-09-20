@@ -14,7 +14,7 @@ const HomePage = (): JSX.Element => {
     const [levelRestricted, setLevelRestricted] = useState(true);
 
     useEffect(() => {
-        if(instances.classic.length === 0) return;
+        if (instances.classic.length === 0) return;
         setInstance(instances[xpac][Math.floor(Math.random() * instances[xpac].length)]);
     }, [instances, xpac]);
 

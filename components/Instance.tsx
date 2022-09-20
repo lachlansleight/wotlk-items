@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { InstanceDifficulty, PopulatedInstance, PopulatedItemDrop, Quality } from "lib/types";
+import { InstanceDifficulty, Item, PopulatedInstance, PopulatedItemDrop, Quality } from "lib/types";
 import { canUseItem, getItemValue, getMatchingCharacterItem } from "lib/characterParsing";
 import useCharacterData from "lib/useCharacter";
+import useWowData from "lib/useWowData";
 
 const InstanceC = ({
     instance,
@@ -13,6 +14,7 @@ const InstanceC = ({
     levelRestricted?: boolean;
 }): JSX.Element => {
     const { character } = useCharacterData();
+    const { items, exchanges } = useWowData();
     const difficulties = useMemo(() => {
         const allDiffs: string[] = [];
         instance.sources.forEach(source => {
@@ -32,7 +34,12 @@ const InstanceC = ({
 
     const metadata = useMemo(() => {
         const output: {
-            [key: number]: { usable: boolean; values: number[]; valueDiffs: number[] };
+            [key: number]: {
+                usable: boolean;
+                values: number[];
+                valueDiffs: number[];
+                bestExchange: Item | null;
+            };
         } = {};
         if (!character) return output;
 
@@ -44,10 +51,32 @@ const InstanceC = ({
                         usable: canUseItem(character, item, !levelRestricted),
                         values: [],
                         valueDiffs: [],
+                        bestExchange: null,
                     };
+                    let itemToEvaluate = item;
+                    if (exchanges[item.id]) {
+                        //get all items that this drop can be exchanged for, that the character can use
+                        const validExchanges = exchanges[item.id]
+                            .map(id => items.find(i => i.id === id))
+                            .filter(i => !!i && canUseItem(character, i, !levelRestricted));
+                        if (validExchanges.length > 0) {
+                            //get the best one
+                            const bestExchange = validExchanges.reduce((prev, curr) => {
+                                if (!prev) return curr;
+                                if (!curr) return prev;
+                                return getItemValue(character, curr) > getItemValue(character, prev)
+                                    ? curr
+                                    : prev;
+                            });
+                            if (bestExchange) {
+                                itemToEvaluate = { ...bestExchange, droprate: item.droprate };
+                                output[item.id].bestExchange = itemToEvaluate;
+                            }
+                        }
+                    }
                     if (!output[item.id].usable) return;
-                    output[item.id].values = getItemValue(character, item);
-                    const matchingItems = getMatchingCharacterItem(character, item);
+                    output[item.id].values = getItemValue(character, itemToEvaluate);
+                    const matchingItems = getMatchingCharacterItem(character, itemToEvaluate);
                     if (matchingItems.length === 0) {
                         output[item.id].valueDiffs = output[item.id].values;
                     } else {
@@ -195,24 +224,73 @@ const InstanceC = ({
                                             <a
                                                 key={i.id}
                                                 className="flex gap-2 items-center border rounded border-opacity-10 border-white px-2"
-                                                href={`https://wowhead.com/wotlk/item=${i.id}`}
+                                                href={`https://wowhead.com/wotlk/item=${
+                                                    metadata &&
+                                                    metadata[i.id] &&
+                                                    metadata[i.id].bestExchange
+                                                        ? metadata[i.id]?.bestExchange?.id || i.id
+                                                        : i.id
+                                                }`}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
-                                                <img
-                                                    src={`https://wow.zamimg.com/images/wow/icons/medium/${i.icon}.jpg`}
-                                                    className={`border-2 rounded border-${getColor(
-                                                        i.quality
-                                                    )}`}
-                                                />
+                                                <div className="relative">
+                                                    <img
+                                                        src={`https://wow.zamimg.com/images/wow/icons/medium/${
+                                                            metadata &&
+                                                            metadata[i.id] &&
+                                                            metadata[i.id].bestExchange
+                                                                ? metadata[i.id]?.bestExchange
+                                                                      ?.icon || i.icon
+                                                                : i.icon
+                                                        }.jpg`}
+                                                        className={`border-2 rounded border-${getColor(
+                                                            metadata &&
+                                                                metadata[i.id] &&
+                                                                metadata[i.id].bestExchange
+                                                                ? metadata[i.id]?.bestExchange
+                                                                      ?.quality || i.quality
+                                                                : i.quality
+                                                        )}`}
+                                                    />
+                                                    {metadata &&
+                                                        metadata[i.id] &&
+                                                        metadata[i.id].bestExchange && (
+                                                            <a
+                                                                key={i.id}
+                                                                className="flex gap-2 items-center border rounded border-opacity-10 border-white px-2"
+                                                                href={`https://wowhead.com/wotlk/item=${i.id}`}
+                                                                target="_blank"
+                                                                rel="noreferrer"
+                                                            >
+                                                                <img
+                                                                    src={`https://wow.zamimg.com/images/wow/icons/medium/${i.icon}.jpg`}
+                                                                    className={`border rounded border-${getColor(
+                                                                        i.quality
+                                                                    )} absolute w-6 h-6 -left-1 -bottom-1`}
+                                                                />
+                                                            </a>
+                                                        )}
+                                                </div>
                                                 <p
                                                     className={`font-bold flex-grow text-${getColor(
-                                                        i.quality
+                                                        metadata &&
+                                                            metadata[i.id] &&
+                                                            metadata[i.id].bestExchange
+                                                            ? metadata[i.id].bestExchange
+                                                                  ?.quality || i.quality
+                                                            : i.quality
                                                     )}`}
                                                 >
-                                                    {i.name}
+                                                    {metadata &&
+                                                    metadata[i.id] &&
+                                                    metadata[i.id].bestExchange
+                                                        ? metadata[i.id].bestExchange?.name ||
+                                                          i.name
+                                                        : i.name}
                                                 </p>
-                                                {(softresData && metadata[i.id]) &&
+                                                {softresData &&
+                                                    metadata[i.id] &&
                                                     metadata[i.id].valueDiffs[0] > 0 && (
                                                         <div className="flex flex-col items-center font-bold text-cyan-400 w-24">
                                                             <p>
