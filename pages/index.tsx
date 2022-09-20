@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Layout from "components/layout/Layout";
 import { PopulatedInstance } from "lib/types";
-import InstanceC from "components/Instance";
+import InstanceLayout from "components/wow/InstanceLayout";
 import Toggle from "components/Toggle";
 import useWowData from "lib/useWowData";
 import CharacterSelect from "components/CharacterSelect";
@@ -11,7 +11,7 @@ const HomePage = (): JSX.Element => {
     const [xpac, setXpac] = useState<"classic" | "tbc" | "wotlk">("wotlk");
     const [instance, setInstance] = useState<PopulatedInstance | null>(null);
     const [hideNonUpgrades, setHideNonUpgrades] = useState(false);
-    const [levelRestricted, setLevelRestricted] = useState(true);
+    const [ignoreRequiredLevel, setIgnoreRequiredLevel] = useState(false);
 
     useEffect(() => {
         if (instances.classic.length === 0) return;
@@ -79,20 +79,20 @@ const HomePage = (): JSX.Element => {
                                         />
                                     </div>
                                     <div className="flex gap-4 justify-end items-center">
-                                        <p className="w-48">Level Limited</p>
+                                        <p className="w-48">Ignore Level Req.</p>
                                         <Toggle
-                                            value={levelRestricted}
-                                            onChange={setLevelRestricted}
+                                            value={ignoreRequiredLevel}
+                                            onChange={setIgnoreRequiredLevel}
                                         />
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {instance && (
-                            <InstanceC
+                            <InstanceLayout
                                 instance={instance}
                                 hideNonUpgrades={hideNonUpgrades}
-                                levelRestricted={levelRestricted}
+                                ignoreRequiredLevel={ignoreRequiredLevel}
                             />
                         )}
                     </div>

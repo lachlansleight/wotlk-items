@@ -1,4 +1,4 @@
-import { Item, ItemStats } from "./types";
+import { Item, ItemStats, Quality } from "./types";
 
 export const isEquippable = (item: any): boolean => {
     if (!item.class) return false;
@@ -304,4 +304,25 @@ export const ParseItem = (item: any): Item => {
         socketBonus: output.socketBonus,
         contentPhase: output.contentPhase || 1,
     };
+};
+
+export const getColor = (quality: Quality): string => {
+    switch (quality) {
+        case "Poor":
+            return "gray-400";
+        case "Common":
+            return "white";
+        case "Uncommon":
+            return "green-500";
+        case "Rare":
+            return "blue-500";
+        case "Epic":
+            return "purple-500";
+        case "Legendary":
+            return "orange-500";
+        case "Heirloom":
+            return "orange-200";
+        case "Unknown":
+            return "white";
+    }
 };

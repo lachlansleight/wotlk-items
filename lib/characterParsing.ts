@@ -123,6 +123,7 @@ export const parseEightUpgradesCharacter = (input: any, items: Item[]): Characte
         //if(stats.holyDamage) output.statWeightings[points.name].holyDamage = stats.holyDamage;
         if (stats.intellect) output.statWeightings[points.name].intellect = stats.intellect;
         if (stats.mainHandSpeed) output.statWeightings[points.name].speed = stats.mainHandSpeed;
+        if (stats.dps) output.statWeightings[points.name].dps = stats.dps;
         //if(stats.mana) output.statWeightings[points.name].mana = stats.mana;
         if (stats.mp5) output.statWeightings[points.name].mp5 = stats.mp5;
         //if(stats.natureDamage) output.statWeightings[points.name].natureDamage = stats.natureDamage;
@@ -154,10 +155,10 @@ export const parseEightUpgradesCharacter = (input: any, items: Item[]): Characte
 export const canUseItem = (
     character: CharacterState,
     item: Item,
-    skipLevelCheck = false
+    ignoreRequiredLevel = false
 ): boolean => {
     if (item.classes && !item.classes.includes(character.class)) return false;
-    if (!skipLevelCheck && item.lvlReq && item.lvlReq > character.level) return false;
+    if (!ignoreRequiredLevel && item.lvlReq && item.lvlReq > character.level) return false;
     if (item.class === "Armor") {
         if (item.subclass === "Plate") {
             if (character.level < 40) return false;
