@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from "react";
+import { useCallback, useEffect, useMemo } from "react";
 import { canUseItem, getItemValue, getMatchingCharacterItem } from "lib/characterParsing";
 import { getColor } from "lib/itemParsing";
 import { InstanceDifficulty, Item, PopulatedItemDrop, PopulatedItemSource } from "lib/types";
@@ -12,12 +12,16 @@ const ItemSourceLayout = ({
     softresData = {},
     ignoreRequiredLevel = false,
     hideNonUpgrades = false,
+    onSrMax,
+    globalMaxSr = 0,
 }: {
     source: PopulatedItemSource;
     difficulty: InstanceDifficulty;
     softresData: Record<number, number>;
     ignoreRequiredLevel?: boolean;
     hideNonUpgrades?: boolean;
+    onSrMax?: (sourceName: string, value: number) => void;
+    globalMaxSr?: number;
 }): JSX.Element => {
     const { exchanges, items } = useWowData();
     const { character } = useCharacterData();
@@ -100,7 +104,42 @@ const ItemSourceLayout = ({
         return sourceItems.filter(item => (valueDiffs[item.id] || 0) > 0);
     }, [sourceItems, valueDiffs, hideNonUpgrades]);
 
-    console.log(itemExchanges);
+    //https://gist.github.com/rosszurowski/67f04465c424a9bc0dae
+    const lerpColor = (a: string, b: string, amount: number) => {
+        amount = Math.max(0, Math.min(1, amount));
+        const ah = parseInt(a.replace(/#/g, ""), 16);
+        const ar = ah >> 16,
+            ag = (ah >> 8) & 0xff,
+            ab = ah & 0xff;
+        const bh = parseInt(b.replace(/#/g, ""), 16);
+        const br = bh >> 16,
+            bg = (bh >> 8) & 0xff,
+            bb = bh & 0xff;
+        const rr = ar + amount * (br - ar);
+        const rg = ag + amount * (bg - ag);
+        const rb = ab + amount * (bb - ab);
+        return "#" + (((1 << 24) + (rr << 16) + (rg << 8) + rb) | 0).toString(16).slice(1);
+    };
+
+    //todo - this somehow needs to go out to the parent instance layout!
+    useEffect(() => {
+        if (Object.keys(softresData).length === 0) return;
+        if (onSrMax)
+            onSrMax(
+                source.name,
+                filteredItems.reduce(
+                    (acc, item) =>
+                        Math.max(
+                            acc,
+                            Math.round(
+                                (100 * item.droprate * valueDiffs[item.id]) /
+                                    (1 + (softresData[item.id] || 0))
+                            )
+                        ),
+                    0
+                )
+            );
+    }, [softresData, valueDiffs, filteredItems, onSrMax]);
 
     return (
         <div className="mb-4">
@@ -131,54 +170,109 @@ const ItemSourceLayout = ({
                         return (
                             <a
                                 key={item.id}
-                                className="flex gap-2 items-center border rounded border-opacity-10 border-white px-2 py-1"
+                                className="flex gap-2 flex-col border rounded border-opacity-10 border-white px-2 py-1"
                                 href={`https://wowhead.com/wotlk/item=${
                                     (itemExchanges[item.id] || item).id
                                 }`}
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <ItemThumbnail item={item} subItem={itemExchanges[item.id]} />
-                                <p
-                                    className={`font-bold flex-grow text-${getColor(
-                                        (itemExchanges[item.id] || item).quality
-                                    )}`}
-                                >
-                                    {(itemExchanges[item.id] || item).name}
-                                </p>
+                                <div className="flex gap-2 items-center">
+                                    <ItemThumbnail item={item} subItem={itemExchanges[item.id]} />
+                                    <p
+                                        className={`font-bold flex-grow text-${getColor(
+                                            (itemExchanges[item.id] || item).quality
+                                        )}`}
+                                    >
+                                        {(itemExchanges[item.id] || item).name}
+                                    </p>
+                                    <div className="flex flex-col items-end pl-4">
+                                        {item.droprate !== 0 && (
+                                            <p className="font-bold text-xl">
+                                                {Math.round(item.droprate * 100)}%
+                                            </p>
+                                        )}
+                                        {character && (
+                                            <p
+                                                className={`text-lg ${
+                                                    valueDiffs[item.id] > 0
+                                                        ? "text-green-500"
+                                                        : "text-red-500"
+                                                }`}
+                                            >
+                                                {valueDiffs[item.id] > 0 ? "+" : ""}
+                                                {Math.round(valueDiffs[item.id])}
+                                            </p>
+                                        )}
+                                    </div>
+                                </div>
                                 {Object.keys(softresData).length > 0 && (
-                                    <div className="flex flex-col items-center font-bold text-cyan-400 w-24">
-                                        <p>
-                                            {softresData[item.id] || 0} SR
-                                            {softresData[item.id] === 1 ? "" : "s"}
-                                        </p>
-                                        <p>
-                                            {Math.round(
-                                                (100 * item.droprate * valueDiffs[item.id]) /
-                                                    (1 + (softresData[item.id] || 0))
-                                            )}
-                                        </p>
+                                    <div className="flex items-center font-bold text-cyan-400 gap-4">
+                                        <div className="relative border border-white rounded border-opacity-20 w-full grid place-items-center">
+                                            <p className="relative z-10 flex gap-2">
+                                                <span
+                                                    style={{
+                                                        color: lerpColor(
+                                                            "#3df59c",
+                                                            "#db3737",
+                                                            Math.min(
+                                                                1.0,
+                                                                (softresData[item.id] || 0) / 5.0
+                                                            )
+                                                        ),
+                                                    }}
+                                                >
+                                                    {softresData[item.id] || 0} other SR
+                                                    {softresData[item.id] === 1 ? ":" : "s:"}
+                                                </span>
+                                                <span
+                                                    style={{
+                                                        color: lerpColor(
+                                                            "#FFFFFF",
+                                                            "#13ed54",
+                                                            Math.round(
+                                                                (100 *
+                                                                    item.droprate *
+                                                                    valueDiffs[item.id]) /
+                                                                    (1 +
+                                                                        (softresData[item.id] || 0))
+                                                            ) / globalMaxSr
+                                                        ),
+                                                    }}
+                                                >
+                                                    {Math.round(
+                                                        (100 *
+                                                            Math.round(
+                                                                (100 *
+                                                                    (item.droprate || 0) *
+                                                                    valueDiffs[item.id]) /
+                                                                    (1 +
+                                                                        (softresData[item.id] || 0))
+                                                            )) /
+                                                            globalMaxSr
+                                                    )}{" "}
+                                                    %
+                                                </span>
+                                            </p>
+                                            <div
+                                                className="absolute left-0 top-0 h-full bg-neutral-700"
+                                                style={{
+                                                    width: `${
+                                                        (100 *
+                                                            Math.round(
+                                                                (100 *
+                                                                    (item.droprate || 0) *
+                                                                    valueDiffs[item.id]) /
+                                                                    (1 +
+                                                                        (softresData[item.id] || 0))
+                                                            )) /
+                                                        globalMaxSr
+                                                    }%`,
+                                                }}
+                                            />
+                                        </div>
                                     </div>
                                 )}
-                                <div className="flex flex-col items-end pl-4">
-                                    {item.droprate !== 0 && (
-                                        <p className="font-bold text-xl">
-                                            {Math.round(item.droprate * 100)}%
-                                        </p>
-                                    )}
-                                    {character && (
-                                        <p
-                                            className={`text-lg ${
-                                                valueDiffs[item.id] > 0
-                                                    ? "text-green-500"
-                                                    : "text-red-500"
-                                            }`}
-                                        >
-                                            {valueDiffs[item.id] > 0 ? "+" : ""}
-                                            {Math.round(valueDiffs[item.id])}
-                                        </p>
-                                    )}
-                                </div>
                             </a>
                         );
                     })}

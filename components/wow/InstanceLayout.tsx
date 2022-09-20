@@ -18,9 +18,14 @@ const InstanceLayout = ({
     const [diff, setDiff] = useState<InstanceDifficulty>("NORMAL_DIFF");
 
     const [softresData, setSoftresData] = useState<Record<number, number>>({});
+    const [srMax, setSrMax] = useState<Record<string, number>>({});
     const showSecretPopup = useCallback(() => {
+        if (Object.keys(softresData).length > 0) {
+            setSoftresData({});
+            return;
+        }
         if (!character) return;
-        const newVal = prompt("Secret!");
+        const newVal = prompt("Enter sneaky secret data");
         if (!newVal) return;
         try {
             const lines = newVal?.split("\n");
@@ -36,9 +41,9 @@ const InstanceLayout = ({
             setSoftresData(output);
         } catch {
             //do nothing
-            alert("Wrong");
+            alert("Nope not that data, you donut.");
         }
-    }, [character]);
+    }, [character, softresData]);
 
     return (
         <div className="mb-8">
@@ -57,6 +62,11 @@ const InstanceLayout = ({
                     softresData={softresData}
                     hideNonUpgrades={hideNonUpgrades}
                     ignoreRequiredLevel={ignoreRequiredLevel}
+                    globalMaxSr={Object.keys(srMax).reduce(
+                        (acc, cur) => Math.max(acc, srMax[cur]),
+                        0
+                    )}
+                    onSrMax={(name, max) => setSrMax(cur => ({ ...cur, [name]: max }))}
                 />
             ))}
         </div>
