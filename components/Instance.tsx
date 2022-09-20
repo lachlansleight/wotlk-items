@@ -53,12 +53,20 @@ const InstanceC = ({
                         valueDiffs: [],
                         bestExchange: null,
                     };
+                    const baseItemValue = output[item.id].usable
+                        ? getItemValue(character, item)
+                        : 0;
                     let itemToEvaluate = item;
                     if (exchanges[item.id]) {
                         //get all items that this drop can be exchanged for, that the character can use
                         const validExchanges = exchanges[item.id]
                             .map(id => items.find(i => i.id === id))
-                            .filter(i => !!i && canUseItem(character, i, !levelRestricted));
+                            .filter(
+                                i =>
+                                    !!i &&
+                                    canUseItem(character, i, !levelRestricted) &&
+                                    getItemValue(character, i) > baseItemValue
+                            );
                         if (validExchanges.length > 0) {
                             //get the best one
                             const bestExchange = validExchanges.reduce((prev, curr) => {
