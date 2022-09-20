@@ -199,6 +199,7 @@ export interface ItemSource {
 export type ItemDrop = { id: number; droprate: number };
 
 export interface PopulatedInstance extends Instance {
+    xpac: "classic" | "tbc" | "wotlk";
     sources: PopulatedItemSource[];
 }
 

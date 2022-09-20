@@ -49,8 +49,13 @@ const PopulateItemSource = (itemSource: ItemSource, items: Item[]): PopulatedIte
     return output;
 };
 
-export const PopulateInstance = (instance: Instance, items: Item[]): PopulatedInstance => {
+export const PopulateInstance = (
+    xpac: "classic" | "tbc" | "wotlk",
+    instance: Instance,
+    items: Item[]
+): PopulatedInstance => {
     const output: PopulatedInstance = {
+        xpac,
         name: instance.name,
         id: instance.id,
         contentType: instance.contentType,
