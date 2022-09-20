@@ -158,7 +158,7 @@ const InstanceC = ({
                     <div key={instance.name + "_" + s.name} className="mb-4">
                         {s.objectId?.length ? (
                             <a
-                                href={`https://classic.wowhead.com/object=${s.objectId[0]}`}
+                                href={`https://wowhead.com/wotlk/object=${s.objectId[0]}`}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="text-xl"
@@ -167,7 +167,7 @@ const InstanceC = ({
                             </a>
                         ) : s.npcId?.length ? (
                             <a
-                                href={`https://classic.wowhead.com/npc=${s.npcId[0]}`}
+                                href={`https://wowhead.com/wotlk/npc=${s.npcId[0]}`}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="text-xl"
