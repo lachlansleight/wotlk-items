@@ -107,27 +107,43 @@ export const parseEightUpgradesCharacter = (input: any, items: Item[]): Characte
         if (stats.agility) output.statWeightings[points.name].agility = stats.agility;
         //if(stats.arcaneDamage) output.statWeightings[points.name].arcaneDamage = stats.arcaneDamage;
         if (stats.armor) output.statWeightings[points.name].armor = stats.armor;
+        if (stats.armorPenRating)
+            output.statWeightings[points.name].armorPenetration = stats.armorPenRating;
         if (stats.attackPower) output.statWeightings[points.name].attackPower = stats.attackPower;
+        if (stats.block) output.statWeightings[points.name].blockRating = stats.block;
+        if (stats.blockRating) output.statWeightings[points.name].blockRating = stats.blockRating;
+        if (stats.blockValue) output.statWeightings[points.name].blockValue = stats.blockValue;
         if (stats.crit) output.statWeightings[points.name].crit = stats.crit;
         if (stats.critRating) output.statWeightings[points.name].crit = stats.critRating;
         if (stats.defense) output.statWeightings[points.name].defense = stats.defense;
+        if (stats.defenseRating) output.statWeightings[points.name].defense = stats.defenseRating;
+        if (stats.dps) output.statWeightings[points.name].dps = stats.dps;
+        if (stats.rangedDps) output.statWeightings[points.name].rangedDps = stats.rangedDps;
         if (stats.dodge) output.statWeightings[points.name].dodge = stats.dodge;
+        if (stats.dodgeRating) output.statWeightings[points.name].dodge = stats.dodgeRating;
+        if (stats.expertise) output.statWeightings[points.name].expertise = stats.expertise;
+        if (stats.expertiseRating)
+            output.statWeightings[points.name].expertise = stats.expertiseRating;
         //if(stats.feralAttackPower) output.statWeightings[points.name].feralAttackPower = stats.feralAttackPower;
         //if(stats.fireDamage) output.statWeightings[points.name].fireDamage = stats.fireDamage;
         //if(stats.frostDamage) output.statWeightings[points.name].frostDamage = stats.frostDamage;
         if (stats.haste) output.statWeightings[points.name].haste = stats.haste;
         if (stats.hasteRating) output.statWeightings[points.name].haste = stats.hasteRating;
         //if(stats.health) output.statWeightings[points.name].health = stats.health;
+        if (stats.highDamage) output.statWeightings[points.name].dmgMax = stats.highDamage;
         if (stats.hit) output.statWeightings[points.name].hit = stats.hit;
         if (stats.hitRating) output.statWeightings[points.name].hit = stats.hitRating;
         //if(stats.holyDamage) output.statWeightings[points.name].holyDamage = stats.holyDamage;
+        //if(stats.hp5) output.statWeightings[points.name].hp5 = stats.hp5;
         if (stats.intellect) output.statWeightings[points.name].intellect = stats.intellect;
-        if (stats.mainHandSpeed) output.statWeightings[points.name].speed = stats.mainHandSpeed;
-        if (stats.dps) output.statWeightings[points.name].dps = stats.dps;
+        if (stats.lowDamage) output.statWeightings[points.name].dmgMin = stats.lowDamage;
+        if (stats.speed) output.statWeightings[points.name].speed = stats.speed;
+        if (stats.rangedSpeed) output.statWeightings[points.name].rangedSpeed = stats.rangedSpeed;
         //if(stats.mana) output.statWeightings[points.name].mana = stats.mana;
         if (stats.mp5) output.statWeightings[points.name].mp5 = stats.mp5;
         //if(stats.natureDamage) output.statWeightings[points.name].natureDamage = stats.natureDamage;
         if (stats.parry) output.statWeightings[points.name].parry = stats.parry;
+        if (stats.parryRating) output.statWeightings[points.name].parry = stats.parryRating;
         if (stats.resilience) output.statWeightings[points.name].resilience = stats.resilience;
         if (stats.resilienceRating)
             output.statWeightings[points.name].resilience = stats.resilienceRating;
@@ -140,6 +156,7 @@ export const parseEightUpgradesCharacter = (input: any, items: Item[]): Characte
         if (stats.spirit) output.statWeightings[points.name].spirit = stats.spirit;
         if (stats.stamina) output.statWeightings[points.name].stamina = stats.stamina;
         if (stats.strength) output.statWeightings[points.name].strength = stats.strength;
+        //if (stats.weaponDamage) output.statWeightings[points.name].dmgAvg = stats.weaponDamage;
 
         if (stats.metaSockets) output.statWeightings[points.name].metaGem = stats.metaSockets;
         if (stats.redSockets) output.statWeightings[points.name].redGem = stats.redSockets;
@@ -147,6 +164,24 @@ export const parseEightUpgradesCharacter = (input: any, items: Item[]): Characte
         if (stats.blueSockets) output.statWeightings[points.name].blueGem = stats.blueSockets;
         if (stats.prismaticSockets)
             output.statWeightings[points.name].prismaticGem = stats.prismaticSockets;
+
+        if (stats.arcaneResist)
+            output.statWeightings[points.name].arcaneResistance = stats.arcaneResist;
+        if (stats.fireResist) output.statWeightings[points.name].fireResistance = stats.fireResist;
+        if (stats.frostResist)
+            output.statWeightings[points.name].frostResistance = stats.frostResist;
+        if (stats.natureResist)
+            output.statWeightings[points.name].natureResistance = stats.natureResist;
+        if (stats.shadowResist)
+            output.statWeightings[points.name].shadowResistance = stats.shadowResist;
+
+        //if(stats.beastAttackPower) output.statWeightings[points.name].beastAttackPower = stats.beastAttackPower;
+        //if(stats.demonSpellDamage) output.statWeightings[points.name].demonSpellDamage = stats.demonSpellDamage;
+        //if(stats.demonAttackPower) output.statWeightings[points.name].demonAttackPower = stats.demonAttackPower;
+        //if(stats.dragonAttackPower) output.statWeightings[points.name].dragonAttackPower = stats.dragonAttackPower;
+        //if(stats.eleAttackPower) output.statWeightings[points.name].eleAttackPower = stats.eleAttackPower;
+        //if(stats.undeadAttackPower) output.statWeightings[points.name].undeadAttackPower = stats.undeadAttackPower;
+        //if(stats.undeadSpellDamage) output.statWeightings[points.name].undeadSpellDamage = stats.undeadSpellDamage;
     });
 
     return output;

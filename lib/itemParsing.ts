@@ -262,9 +262,13 @@ export const ParseItem = (item: any): Item => {
                 const newArmor = parseInt(tooltip.label.split(" ")[0]);
                 if (!isNaN(newArmor)) stats.armor = newArmor;
             } else if (tooltip.label.includes("Speed"))
-                stats.speed = parseFloat(tooltip.label.split(" ")[1]);
+                if (output.slot === "Ranged" || output.slot === "Thrown")
+                    stats.rangedSpeed = parseFloat(tooltip.label.split(" ")[1]);
+                else stats.speed = parseFloat(tooltip.label.split(" ")[1]);
             else if (tooltip.label.includes("damage per second"))
-                stats.dps = parseFloat(tooltip.label.split(" ")[0].replace("(", ""));
+                if (output.slot === "Ranged" || output.slot === "Thrown")
+                    stats.rangedDps = parseFloat(tooltip.label.split(" ")[0].replace("(", ""));
+                else stats.dps = parseFloat(tooltip.label.split(" ")[0].replace("(", ""));
             else if (tooltip.label.includes(" Damage")) {
                 const pieces = tooltip.label.split(" ");
                 stats.dmgMin = parseInt(pieces[0]);

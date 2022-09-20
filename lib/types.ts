@@ -51,6 +51,8 @@ export interface ItemStats {
     dmgMax?: number;
     speed?: number;
     dps?: number;
+    rangedSpeed?: number;
+    rangedDps?: number;
 }
 
 export type GemSocket = "Meta" | "Red" | "Yellow" | "Blue" | "Prismatic";
