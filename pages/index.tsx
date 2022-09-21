@@ -46,11 +46,11 @@ const HomePage = (): JSX.Element => {
                                     <div className="flex gap-4 justify-left items-center">
                                         <p className="w-32">Instance</p>
                                         <select
-                                            value={instance ? instance.id : -1}
+                                            value={instance ? instance.name : -1}
                                             onChange={e =>
                                                 setInstance(
                                                     instances[xpac].find(
-                                                        i => i.id === parseInt(e.target.value)
+                                                        i => i.name === e.target.value
                                                     ) || null
                                                 )
                                             }
@@ -61,7 +61,7 @@ const HomePage = (): JSX.Element => {
                                                 return (
                                                     <option
                                                         key={`instance-${xpac}-${i.id}-${j}`}
-                                                        value={i.id}
+                                                        value={i.name}
                                                     >
                                                         {i.name}
                                                     </option>
