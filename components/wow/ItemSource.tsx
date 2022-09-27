@@ -189,7 +189,8 @@ const ItemSourceLayout = ({
                                     <div className="flex flex-col items-end pl-4">
                                         {item.droprate !== 0 && (
                                             <p className="font-bold text-xl">
-                                                {Math.round(item.droprate * 100)}%
+                                                {item.reputation ||
+                                                    `${Math.round(item.droprate * 100)}%`}
                                             </p>
                                         )}
                                         {character && (

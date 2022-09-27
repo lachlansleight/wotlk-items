@@ -198,7 +198,16 @@ export interface ItemSource {
     RAID25H_DIFF?: ItemDrop[];
 }
 
-export type ItemDrop = { id: number; droprate: number };
+export type ReputationLevel =
+    | "Hated"
+    | "Hostile"
+    | "Unfriendly"
+    | "Neutral"
+    | "Friendly"
+    | "Honored"
+    | "Revered"
+    | "Exalted";
+export type ItemDrop = { id: number; droprate: number; reputation?: ReputationLevel };
 
 export interface PopulatedInstance extends Instance {
     xpac: "classic" | "tbc" | "wotlk";
