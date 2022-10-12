@@ -43,6 +43,7 @@ const CharacterSelect = (): JSX.Element => {
                                         ...characters.filter(c => c.id !== newCharacter.id),
                                         newCharacter,
                                     ]);
+                                    setCharacter(newCharacter);
                                     setNewCharacter(null);
                                     setImportingCharacter(false);
                                 }}
