@@ -142,7 +142,7 @@ const ItemSourceLayout = ({
     }, [softresData, valueDiffs, filteredItems, onSrMax]);
 
     return (
-        <div className="mb-4">
+        <div className="mb-8">
             {source.objectId?.length ? (
                 <a
                     href={`https://wowhead.com/wotlk/object=${source.objectId[0]}`}
@@ -165,7 +165,7 @@ const ItemSourceLayout = ({
                 <h2 className="text-xl">{source.name}</h2>
             )}
             {source[difficulty] && (
-                <div className="grid grid-cols-3 gap-2 border-t border-white border-opacity-20 pt-2">
+                <div className="grid grid-cols-3 gap-2 border-t border-white border-opacity-60 pt-2">
                     {filteredItems.map((item: PopulatedItemDrop) => {
                         return (
                             <a
