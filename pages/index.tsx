@@ -5,9 +5,11 @@ import InstanceLayout from "components/wow/InstanceLayout";
 import Toggle from "components/Toggle";
 import useWowData from "lib/useWowData";
 import CharacterSelect from "components/CharacterSelect";
+import useCharacterData from "lib/useCharacter";
 
 const HomePage = (): JSX.Element => {
     const { hasData, instances } = useWowData();
+    const { character } = useCharacterData();
     const [xpac, setXpac] = useState<"classic" | "tbc" | "wotlk">("wotlk");
     const [instance, setInstance] = useState<PopulatedInstance | null>(null);
     const [hideNonUpgrades, setHideNonUpgrades] = useState(false);
@@ -70,22 +72,26 @@ const HomePage = (): JSX.Element => {
                                         </select>
                                     </div>
                                 </div>
-                                <div className="text-2xl flex flex-col gap-4">
-                                    <div className="flex gap-4 justify-end items-center">
-                                        <p className="w-48">Only Upgrades</p>
-                                        <Toggle
-                                            value={hideNonUpgrades}
-                                            onChange={setHideNonUpgrades}
-                                        />
+                                {character ? (
+                                    <div className="text-2xl flex flex-col gap-4">
+                                        <div className="flex gap-4 justify-end items-center">
+                                            <p className="w-48">Only Upgrades</p>
+                                            <Toggle
+                                                value={hideNonUpgrades}
+                                                onChange={setHideNonUpgrades}
+                                            />
+                                        </div>
+                                        <div className="flex gap-4 justify-end items-center">
+                                            <p className="w-48">Ignore Level Req.</p>
+                                            <Toggle
+                                                value={ignoreRequiredLevel}
+                                                onChange={setIgnoreRequiredLevel}
+                                            />
+                                        </div>
                                     </div>
-                                    <div className="flex gap-4 justify-end items-center">
-                                        <p className="w-48">Ignore Level Req.</p>
-                                        <Toggle
-                                            value={ignoreRequiredLevel}
-                                            onChange={setIgnoreRequiredLevel}
-                                        />
-                                    </div>
-                                </div>
+                                ) : (
+                                    <div />
+                                )}
                             </div>
                         </div>
                         {instance && (
