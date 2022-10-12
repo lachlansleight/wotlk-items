@@ -30,9 +30,26 @@ const CharacterDataProvider = ({ children }: { children: ReactNode }) => {
         localStorage.setItem("characters", JSON.stringify(characters));
     };
 
+    useEffect(() => {
+        if (!characters || characters.length === 0) return;
+        const existingCharacter = localStorage.getItem("character");
+        if (!existingCharacter) return;
+        setCharacter(characters.find(c => c.name === JSON.parse(existingCharacter).name) || null);
+    }, [characters]);
+
+    const setCharacterNew = (character: CharacterState | null) => {
+        setCharacter(character);
+        localStorage.setItem("character", JSON.stringify(character));
+    };
+
     return (
         <characterContext.Provider
-            value={{ character, setCharacter, characters, setCharacters: setCharactersNew }}
+            value={{
+                character,
+                setCharacter: setCharacterNew,
+                characters,
+                setCharacters: setCharactersNew,
+            }}
         >
             {children}
         </characterContext.Provider>

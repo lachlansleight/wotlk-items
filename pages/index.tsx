@@ -16,9 +16,35 @@ const HomePage = (): JSX.Element => {
     const [ignoreRequiredLevel, setIgnoreRequiredLevel] = useState(false);
 
     useEffect(() => {
+        setHideNonUpgrades(localStorage.getItem("hideNonUpgrades") === "true" || false);
+        setIgnoreRequiredLevel(localStorage.getItem("ignoreRequiredLevel") === "true" || false);
+    }, []);
+    
+    useEffect(() => {
+        localStorage.setItem("hideNonUpgrades", hideNonUpgrades.toString());
+        localStorage.setItem("ignoreRequiredLevel", ignoreRequiredLevel.toString());
+    }, [hideNonUpgrades, ignoreRequiredLevel]);
+
+    useEffect(() => {
         if (instances.classic.length === 0) return;
-        setInstance(instances[xpac][Math.floor(Math.random() * instances[xpac].length)]);
-    }, [instances, xpac]);
+        const xpac = (localStorage.getItem("xpac") as "classic" | "tbc" | "wotlk") || "wotlk";
+        setXpac(xpac);
+        const instanceName = localStorage.getItem("selectedInstance");
+        if (instanceName) {
+            const instance = instances[xpac].find(i => i.name === instanceName);
+            if (instance) setInstance(instance);
+            else setInstance(instances[xpac][0]);
+        } else {
+            setInstance(instances[xpac][0]);
+        }
+    }, [instances]);
+
+    useEffect(() => {
+        localStorage.setItem("xpac", xpac);
+
+        if (!instance) return;
+        localStorage.setItem("selectedInstance", instance?.name || "");
+    }, [xpac, instance]);
 
     return (
         <Layout>
