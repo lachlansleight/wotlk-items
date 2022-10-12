@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { InstanceDifficulty, PopulatedInstance } from "lib/types";
 import useCharacterData from "lib/useCharacter";
 import DifficultySelect from "components/DifficultySelect";
@@ -44,6 +44,17 @@ const InstanceLayout = ({
             alert("Nope not that data, you donut.");
         }
     }, [character, softresData]);
+
+    useEffect(() => {
+        const savedDiff = localStorage.getItem("selectedDiff");
+        console.log(savedDiff);
+        if (savedDiff && Object.keys(instance.sources[0]).includes(savedDiff)) {
+            setDiff(savedDiff as InstanceDifficulty);
+        }
+    }, [instance]);
+    useEffect(() => {
+        localStorage.setItem("selectedDiff", diff);
+    }, [diff]);
 
     return (
         <div className="mb-8">

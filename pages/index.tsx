@@ -19,7 +19,7 @@ const HomePage = (): JSX.Element => {
         setHideNonUpgrades(localStorage.getItem("hideNonUpgrades") === "true" || false);
         setIgnoreRequiredLevel(localStorage.getItem("ignoreRequiredLevel") === "true" || false);
     }, []);
-    
+
     useEffect(() => {
         localStorage.setItem("hideNonUpgrades", hideNonUpgrades.toString());
         localStorage.setItem("ignoreRequiredLevel", ignoreRequiredLevel.toString());
