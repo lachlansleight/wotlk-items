@@ -194,6 +194,12 @@ export const canUseItem = (
 ): boolean => {
     if (item.classes && !item.classes.includes(character.class)) return false;
     if (!ignoreRequiredLevel && item.lvlReq && item.lvlReq > character.level) return false;
+    if (
+        item.unique &&
+        Object.keys(character.items).findIndex(s => (character.items as any)[s].id === item.id) !==
+            -1
+    )
+        return false;
     if (item.class === "Armor") {
         if (item.subclass === "Plate") {
             if (character.level < 40) return false;
@@ -231,7 +237,10 @@ export const canUseItem = (
                 character.class !== "Death Knight"
             )
                 return false;
-        }
+        } else if (item.subclass === "Totem" && character.class !== "Shaman") return false;
+        else if (item.subclass === "Idol" && character.class !== "Druid") return false;
+        else if (item.subclass === "Libram" && character.class !== "Paladin") return false;
+        else if (item.subclass === "Sigil" && character.class !== "Death Knight") return false;
     } else if (item.class === "Weapon") {
         const classProficiencies: { [key: string]: ItemSubclass[] } = {
             "Death Knight": ["Axe", "Sword", "Mace", "Polearm"],
